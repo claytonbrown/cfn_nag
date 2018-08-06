@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSDMSEndpointKmsKeyIdRule < BaseRule
   def rule_text
-    "[kms-encryption-key] AWS::DMS::Endpoint property [KmsKeyId] should exist "
+    "[kms-encryption-key] AWS::DMS::Endpoint property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ] "
   end
 
   def rule_type

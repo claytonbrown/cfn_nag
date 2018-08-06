@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSOpsWorksStackVpcIdRule < BaseRule
   def rule_text
-    "[vpc-protection] AWS::OpsWorks::Stack property [VpcId] should exist "
+    "[vpc-protection] AWS::OpsWorks::Stack property [VpcId] should exist, consider default values of [ {'Ref': 'VpcId'} ] "
   end
 
   def rule_type

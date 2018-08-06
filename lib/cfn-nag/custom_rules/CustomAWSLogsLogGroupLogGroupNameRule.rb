@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSLogsLogGroupLogGroupNameRule < BaseRule
   def rule_text
-    "[logging] AWS::Logs::LogGroup property [LogGroupName] should exist "
+    "[logging] AWS::Logs::LogGroup property [LogGroupName] should exist"
   end
 
   def rule_type

@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSS3BucketBucketEncryptionRule < BaseRule
   def rule_text
-    "[encrypted] AWS::S3::Bucket property [BucketEncryption] should exist "
+    "[encrypted] AWS::S3::Bucket property [BucketEncryption] should exist, consider default values of [ {'ServerSideEncryptionConfiguration': {'KMSMasterKeyID': {'Ref': 'KmsKeyId'}, 'SSEAlgorithm': 'aws:kms'}} ] "
   end
 
   def rule_type

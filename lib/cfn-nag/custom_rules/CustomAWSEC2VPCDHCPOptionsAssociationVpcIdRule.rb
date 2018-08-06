@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2VPCDHCPOptionsAssociationVpcIdRule < BaseRule
   def rule_text
-    "[vpc-protection] AWS::EC2::VPCDHCPOptionsAssociation property [VpcId] should exist "
+    "[vpc-protection] AWS::EC2::VPCDHCPOptionsAssociation property [VpcId] should exist, consider default values of [ {'Ref': 'VpcId'} ] "
   end
 
   def rule_type

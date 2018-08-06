@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSCloudTrailTrailEnableLogFileValidationRule < BaseRule
   def rule_text
-    "[encrypted] AWS::CloudTrail::Trail property [EnableLogFileValidation] should exist "
+    "[encrypted] AWS::CloudTrail::Trail property [EnableLogFileValidation] should exist, consider default values of [ True ] "
   end
 
   def rule_type

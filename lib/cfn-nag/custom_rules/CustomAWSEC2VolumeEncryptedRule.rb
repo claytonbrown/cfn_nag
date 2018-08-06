@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2VolumeEncryptedRule < BaseRule
   def rule_text
-    "[encrypted] AWS::EC2::Volume property [Encrypted] should exist "
+    "[encrypted] AWS::EC2::Volume property [Encrypted] should exist, consider default values of [ True ] "
   end
 
   def rule_type

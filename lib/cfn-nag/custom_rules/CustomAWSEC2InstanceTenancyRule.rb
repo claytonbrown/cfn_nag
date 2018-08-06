@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2InstanceTenancyRule < BaseRule
   def rule_text
-    "[tenancy] AWS::EC2::Instance property [Tenancy] should exist "
+    "[tenancy] AWS::EC2::Instance property [Tenancy] should exist, consider default values of [ {'Ref': 'Tenancy'} ] "
   end
 
   def rule_type

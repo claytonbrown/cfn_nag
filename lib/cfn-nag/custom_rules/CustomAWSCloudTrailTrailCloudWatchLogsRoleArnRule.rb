@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSCloudTrailTrailCloudWatchLogsRoleArnRule < BaseRule
   def rule_text
-    "[logging] AWS::CloudTrail::Trail property [CloudWatchLogsRoleArn] should exist "
+    "[logging] AWS::CloudTrail::Trail property [CloudWatchLogsRoleArn] should exist"
   end
 
   def rule_type

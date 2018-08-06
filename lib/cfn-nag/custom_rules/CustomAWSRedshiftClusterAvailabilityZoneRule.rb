@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRedshiftClusterAvailabilityZoneRule < BaseRule
   def rule_text
-    "[zone-specific] AWS::Redshift::Cluster property [AvailabilityZone] should exist "
+    "[zone-specific] AWS::Redshift::Cluster property [AvailabilityZone] should exist"
   end
 
   def rule_type

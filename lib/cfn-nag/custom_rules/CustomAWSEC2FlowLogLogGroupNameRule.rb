@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2FlowLogLogGroupNameRule < BaseRule
   def rule_text
-    "[logging] AWS::EC2::FlowLog property [LogGroupName] should exist "
+    "[logging] AWS::EC2::FlowLog property [LogGroupName] should exist"
   end
 
   def rule_type

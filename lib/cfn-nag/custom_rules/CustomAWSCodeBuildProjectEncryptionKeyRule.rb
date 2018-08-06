@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSCodeBuildProjectEncryptionKeyRule < BaseRule
   def rule_text
-    "[kms-encryption-key] AWS::CodeBuild::Project property [EncryptionKey] should exist "
+    "[kms-encryption-key] AWS::CodeBuild::Project property [EncryptionKey] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ] "
   end
 
   def rule_type

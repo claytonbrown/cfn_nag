@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSDMSReplicationInstanceAvailabilityZoneRule < BaseRule
   def rule_text
-    "[zone-specific] AWS::DMS::ReplicationInstance property [AvailabilityZone] should exist "
+    "[zone-specific] AWS::DMS::ReplicationInstance property [AvailabilityZone] should exist"
   end
 
   def rule_type

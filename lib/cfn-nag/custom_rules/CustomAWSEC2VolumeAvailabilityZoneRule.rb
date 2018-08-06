@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2VolumeAvailabilityZoneRule < BaseRule
   def rule_text
-    "[zone-specific] AWS::EC2::Volume property [AvailabilityZone] should exist "
+    "[zone-specific] AWS::EC2::Volume property [AvailabilityZone] should exist"
   end
 
   def rule_type

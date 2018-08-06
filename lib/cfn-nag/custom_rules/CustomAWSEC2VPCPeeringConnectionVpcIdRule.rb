@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2VPCPeeringConnectionVpcIdRule < BaseRule
   def rule_text
-    "[vpc-protection] AWS::EC2::VPCPeeringConnection property [VpcId] should exist "
+    "[vpc-protection] AWS::EC2::VPCPeeringConnection property [VpcId] should exist, consider default values of [ {'Ref': 'VpcId'} ] "
   end
 
   def rule_type

@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSOpsWorksAppEnableSslRule < BaseRule
   def rule_text
-    "[encrypted] AWS::OpsWorks::App property [EnableSsl] should exist "
+    "[encrypted] AWS::OpsWorks::App property [EnableSsl] should exist, consider default values of [ True ] "
   end
 
   def rule_type

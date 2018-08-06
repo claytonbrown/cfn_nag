@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRDSDBInstanceStorageEncryptedRule < BaseRule
   def rule_text
-    "[encrypted] AWS::RDS::DBInstance property [StorageEncrypted] should exist "
+    "[encrypted] AWS::RDS::DBInstance property [StorageEncrypted] should exist, consider default values of [ True ] "
   end
 
   def rule_type

@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRDSDBClusterStorageEncryptedRule < BaseRule
   def rule_text
-    "[encrypted] AWS::RDS::DBCluster property [StorageEncrypted] should exist "
+    "[encrypted] AWS::RDS::DBCluster property [StorageEncrypted] should exist, consider default values of [ True ] "
   end
 
   def rule_type

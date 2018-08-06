@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2VPCEnableDnsSupportRule < BaseRule
   def rule_text
-    "[logging] AWS::EC2::VPC property [EnableDnsSupport] should exist "
+    "[logging] AWS::EC2::VPC property [EnableDnsSupport] should exist, consider default values of [ True ] "
   end
 
   def rule_type

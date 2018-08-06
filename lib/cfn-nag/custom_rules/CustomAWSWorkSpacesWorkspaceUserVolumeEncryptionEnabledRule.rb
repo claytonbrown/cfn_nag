@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSWorkSpacesWorkspaceUserVolumeEncryptionEnabledRule < BaseRule
   def rule_text
-    "[encrypted] AWS::WorkSpaces::Workspace property [UserVolumeEncryptionEnabled] should exist "
+    "[encrypted] AWS::WorkSpaces::Workspace property [UserVolumeEncryptionEnabled] should exist, consider default values of [ True ] "
   end
 
   def rule_type

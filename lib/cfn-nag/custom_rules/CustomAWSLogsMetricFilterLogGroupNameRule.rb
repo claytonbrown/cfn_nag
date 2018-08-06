@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSLogsMetricFilterLogGroupNameRule < BaseRule
   def rule_text
-    "[logging] AWS::Logs::MetricFilter property [LogGroupName] should exist "
+    "[logging] AWS::Logs::MetricFilter property [LogGroupName] should exist"
   end
 
   def rule_type

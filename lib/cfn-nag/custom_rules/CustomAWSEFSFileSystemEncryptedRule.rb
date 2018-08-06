@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEFSFileSystemEncryptedRule < BaseRule
   def rule_text
-    "[encrypted] AWS::EFS::FileSystem property [Encrypted] should exist "
+    "[encrypted] AWS::EFS::FileSystem property [Encrypted] should exist, consider default values of [ True ] "
   end
 
   def rule_type

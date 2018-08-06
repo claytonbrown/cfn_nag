@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSLogsLogStreamLogStreamNameRule < BaseRule
   def rule_text
-    "[logging] AWS::Logs::LogStream property [LogStreamName] should exist "
+    "[logging] AWS::Logs::LogStream property [LogStreamName] should exist"
   end
 
   def rule_type

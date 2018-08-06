@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSKMSKeyEnableKeyRotationRule < BaseRule
   def rule_text
-    "[encrypted] AWS::KMS::Key property [EnableKeyRotation] should exist "
+    "[encrypted] AWS::KMS::Key property [EnableKeyRotation] should exist, consider default values of [ True ] "
   end
 
   def rule_type

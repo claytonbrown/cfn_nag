@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSOpsWorksInstanceTenancyRule < BaseRule
   def rule_text
-    "[tenancy] AWS::OpsWorks::Instance property [Tenancy] should exist "
+    "[tenancy] AWS::OpsWorks::Instance property [Tenancy] should exist, consider default values of [ {'Ref': 'Tenancy'} ] "
   end
 
   def rule_type

@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRedshiftClusterEncryptedRule < BaseRule
   def rule_text
-    "[encrypted] AWS::Redshift::Cluster property [Encrypted] should exist "
+    "[encrypted] AWS::Redshift::Cluster property [Encrypted] should exist, consider default values of [ True ] "
   end
 
   def rule_type

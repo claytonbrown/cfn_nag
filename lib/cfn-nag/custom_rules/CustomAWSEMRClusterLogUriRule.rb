@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEMRClusterLogUriRule < BaseRule
   def rule_text
-    "[logging] AWS::EMR::Cluster property [LogUri] should exist "
+    "[logging] AWS::EMR::Cluster property [LogUri] should exist"
   end
 
   def rule_type

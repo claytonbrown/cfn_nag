@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSElasticLoadBalancingV2TargetGroupVpcIdRule < BaseRule
   def rule_text
-    "[vpc-protection] AWS::ElasticLoadBalancingV2::TargetGroup property [VpcId] should exist "
+    "[vpc-protection] AWS::ElasticLoadBalancingV2::TargetGroup property [VpcId] should exist, consider default values of [ {'Ref': 'VpcId'} ] "
   end
 
   def rule_type

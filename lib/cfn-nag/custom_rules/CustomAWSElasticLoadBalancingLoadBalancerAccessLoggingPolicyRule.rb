@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSElasticLoadBalancingLoadBalancerAccessLoggingPolicyRule < BaseRule
   def rule_text
-    "[logging] AWS::ElasticLoadBalancing::LoadBalancer property [AccessLoggingPolicy] should exist "
+    "[logging] AWS::ElasticLoadBalancing::LoadBalancer property [AccessLoggingPolicy] should exist"
   end
 
   def rule_type

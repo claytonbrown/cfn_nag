@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRoute53HostedZoneQueryLoggingConfigRule < BaseRule
   def rule_text
-    "[logging] AWS::Route53::HostedZone property [QueryLoggingConfig] should exist "
+    "[logging] AWS::Route53::HostedZone property [QueryLoggingConfig] should exist"
   end
 
   def rule_type

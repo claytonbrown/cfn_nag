@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRDSDBSecurityGroupEC2VpcIdRule < BaseRule
   def rule_text
-    "[vpc-protection] AWS::RDS::DBSecurityGroup property [EC2VpcId] should exist "
+    "[vpc-protection] AWS::RDS::DBSecurityGroup property [EC2VpcId] should exist, consider default values of [ {'Ref': 'VpcId'} ] "
   end
 
   def rule_type

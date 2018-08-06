@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSElastiCacheReplicationGroupTransitEncryptionEnabledRule < BaseRule
   def rule_text
-    "[encrypted] AWS::ElastiCache::ReplicationGroup property [TransitEncryptionEnabled] should exist "
+    "[encrypted] AWS::ElastiCache::ReplicationGroup property [TransitEncryptionEnabled] should exist, consider default values of [ True ] "
   end
 
   def rule_type

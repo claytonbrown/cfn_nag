@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSGlueJobLogUriRule < BaseRule
   def rule_text
-    "[logging] AWS::Glue::Job property [LogUri] should exist "
+    "[logging] AWS::Glue::Job property [LogUri] should exist"
   end
 
   def rule_type
