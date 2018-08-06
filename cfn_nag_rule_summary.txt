@@ -1,0 +1,174 @@
+WARNING VIOLATIONS:
+W1 Specifying credentials in the template itself is probably not the safest thing
+W2 Security Groups found with cidr open to world on ingress.  This should never be true on instance.  Permissible on ELB
+W5 Security Groups found with cidr open to world on egress
+W9 Security Groups found with ingress cidr that is not /32
+W10 CloudFront Distribution should enable access logging
+W11 IAM role should not allow * resource on its permissions policy
+W12 IAM policy should not allow * resource
+W13 IAM managed policy should not allow * resource
+W14 IAM role should not allow Allow+NotAction on trust permissions
+W15 IAM role should not allow Allow+NotAction
+W16 IAM policy should not allow Allow+NotAction
+W17 IAM managed policy should not allow Allow+NotAction
+W18 SQS Queue policy should not allow Allow+NotAction
+W19 SNS Topic policy should not allow Allow+NotAction
+W20 S3 Bucket policy should not allow Allow+NotAction
+W21 IAM role should not allow Allow+NotResource
+W22 IAM policy should not allow Allow+NotResource
+W23 IAM managed policy should not allow Allow+NotResource
+W24 Lambda permission beside InvokeFunction might not be what you want?  Not sure!?
+W26 Elastic Load Balancer should have access logging enabled
+W27 Security Groups found ingress with port range instead of just a single port
+W29 Security Groups found egress with port range instead of just a single port
+W31 S3 Bucket likely should not have a public read acl
+
+FAILING VIOLATIONS:
+C-0001 [taggable] AWS::AutoScaling::AutoScalingGroup property [Tags] should exist 
+C-0002 [taggable] AWS::CertificateManager::Certificate property [Tags] should exist 
+C-0003 [taggable] AWS::CloudFormation::Stack property [Tags] should exist 
+C-0004 [taggable] AWS::CloudFront::Distribution property [Tags] should exist 
+C-0005 [taggable] AWS::CloudFront::StreamingDistribution property [Tags] should exist 
+C-0006 [logging] AWS::CloudTrail::Trail property [CloudWatchLogsLogGroupArn] should exist 
+C-0007 [logging] AWS::CloudTrail::Trail property [CloudWatchLogsRoleArn] should exist 
+C-0008 [encrypted] AWS::CloudTrail::Trail property [EnableLogFileValidation] should exist 
+C-0009 [logging] AWS::CloudTrail::Trail property [IsLogging] should exist 
+C-0010 [kms-encryption-key] AWS::CloudTrail::Trail property [KMSKeyId] should exist 
+C-0011 [taggable] AWS::CloudTrail::Trail property [Tags] should exist 
+C-0012 [kms-encryption-key] AWS::CodeBuild::Project property [EncryptionKey] should exist 
+C-0013 [taggable] AWS::CodeBuild::Project property [Tags] should exist 
+C-0014 [taggable] AWS::DAX::Cluster property [Tags] should exist 
+C-0015 [kms-encryption-key] AWS::DMS::Endpoint property [KmsKeyId] should exist 
+C-0016 [taggable] AWS::DMS::Endpoint property [Tags] should exist 
+C-0017 [taggable] AWS::DMS::EventSubscription property [Tags] should exist 
+C-0018 [zone-specific] AWS::DMS::ReplicationInstance property [AvailabilityZone] should exist 
+C-0019 [kms-encryption-key] AWS::DMS::ReplicationInstance property [KmsKeyId] should exist 
+C-0020 [taggable] AWS::DMS::ReplicationInstance property [Tags] should exist 
+C-0021 [taggable] AWS::DMS::ReplicationSubnetGroup property [Tags] should exist 
+C-0022 [taggable] AWS::DMS::ReplicationTask property [Tags] should exist 
+C-0023 [taggable] AWS::DynamoDB::Table property [Tags] should exist 
+C-0024 [taggable] AWS::EC2::CustomerGateway property [Tags] should exist 
+C-0025 [taggable] AWS::EC2::DHCPOptions property [Tags] should exist 
+C-0026 [vpc-protection] AWS::EC2::EgressOnlyInternetGateway property [VpcId] should exist 
+C-0027 [logging] AWS::EC2::FlowLog property [DeliverLogsPermissionArn] should exist 
+C-0028 [logging] AWS::EC2::FlowLog property [LogGroupName] should exist 
+C-0029 [zone-specific] AWS::EC2::Host property [AvailabilityZone] should exist 
+C-0030 [zone-specific] AWS::EC2::Instance property [AvailabilityZone] should exist 
+C-0031 [taggable] AWS::EC2::Instance property [Tags] should exist 
+C-0032 [tenancy] AWS::EC2::Instance property [Tenancy] should exist 
+C-0033 [taggable] AWS::EC2::InternetGateway property [Tags] should exist 
+C-0034 [taggable] AWS::EC2::NatGateway property [Tags] should exist 
+C-0035 [taggable] AWS::EC2::NetworkAcl property [Tags] should exist 
+C-0036 [vpc-protection] AWS::EC2::NetworkAcl property [VpcId] should exist 
+C-0037 [taggable] AWS::EC2::NetworkInterface property [Tags] should exist 
+C-0038 [taggable] AWS::EC2::RouteTable property [Tags] should exist 
+C-0039 [vpc-protection] AWS::EC2::RouteTable property [VpcId] should exist 
+C-0040 [taggable] AWS::EC2::SecurityGroup property [Tags] should exist 
+C-0041 [vpc-protection] AWS::EC2::SecurityGroup property [VpcId] should exist 
+C-0042 [zone-specific] AWS::EC2::Subnet property [AvailabilityZone] should exist 
+C-0043 [taggable] AWS::EC2::Subnet property [Tags] should exist 
+C-0044 [vpc-protection] AWS::EC2::Subnet property [VpcId] should exist 
+C-0045 [logging] AWS::EC2::VPC property [EnableDnsHostnames] should exist 
+C-0046 [logging] AWS::EC2::VPC property [EnableDnsSupport] should exist 
+C-0047 [taggable] AWS::EC2::VPC property [Tags] should exist 
+C-0048 [vpc-protection] AWS::EC2::VPCCidrBlock property [VpcId] should exist 
+C-0049 [vpc-protection] AWS::EC2::VPCDHCPOptionsAssociation property [VpcId] should exist 
+C-0050 [vpc-protection] AWS::EC2::VPCEndpoint property [VpcId] should exist 
+C-0051 [vpc-protection] AWS::EC2::VPCGatewayAttachment property [VpcId] should exist 
+C-0052 [taggable] AWS::EC2::VPCPeeringConnection property [Tags] should exist 
+C-0053 [vpc-protection] AWS::EC2::VPCPeeringConnection property [VpcId] should exist 
+C-0054 [taggable] AWS::EC2::VPNConnection property [Tags] should exist 
+C-0055 [taggable] AWS::EC2::VPNGateway property [Tags] should exist 
+C-0056 [zone-specific] AWS::EC2::Volume property [AvailabilityZone] should exist 
+C-0057 [encrypted] AWS::EC2::Volume property [Encrypted] should exist 
+C-0058 [kms-encryption-key] AWS::EC2::Volume property [KmsKeyId] should exist 
+C-0059 [taggable] AWS::EC2::Volume property [Tags] should exist 
+C-0060 [encrypted] AWS::EFS::FileSystem property [Encrypted] should exist 
+C-0061 [kms-encryption-key] AWS::EFS::FileSystem property [KmsKeyId] should exist 
+C-0062 [logging] AWS::EMR::Cluster property [LogUri] should exist 
+C-0063 [taggable] AWS::EMR::Cluster property [Tags] should exist 
+C-0064 [taggable] AWS::ElastiCache::CacheCluster property [Tags] should exist 
+C-0065 [encrypted] AWS::ElastiCache::ReplicationGroup property [AtRestEncryptionEnabled] should exist 
+C-0066 [logging] AWS::ElastiCache::ReplicationGroup property [AutomaticFailoverEnabled] should exist 
+C-0067 [taggable] AWS::ElastiCache::ReplicationGroup property [Tags] should exist 
+C-0068 [encrypted] AWS::ElastiCache::ReplicationGroup property [TransitEncryptionEnabled] should exist 
+C-0069 [taggable] AWS::ElasticBeanstalk::Environment property [Tags] should exist 
+C-0070 [logging] AWS::ElasticLoadBalancing::LoadBalancer property [AccessLoggingPolicy] should exist 
+C-0071 [taggable] AWS::ElasticLoadBalancing::LoadBalancer property [Tags] should exist 
+C-0072 [taggable] AWS::ElasticLoadBalancingV2::LoadBalancer property [Tags] should exist 
+C-0073 [taggable] AWS::ElasticLoadBalancingV2::TargetGroup property [Tags] should exist 
+C-0074 [vpc-protection] AWS::ElasticLoadBalancingV2::TargetGroup property [VpcId] should exist 
+C-0075 [taggable] AWS::Elasticsearch::Domain property [Tags] should exist 
+C-0076 [logging] AWS::GameLift::Fleet property [LogPaths] should exist 
+C-0077 [logging] AWS::Glue::Job property [LogUri] should exist 
+C-0078 [encrypted] AWS::KMS::Key property [EnableKeyRotation] should exist 
+C-0079 [taggable] AWS::KMS::Key property [Tags] should exist 
+C-0080 [encrypted] AWS::Kinesis::Stream property [StreamEncryption] should exist and be set to 'KMS' with reference to KmsKeyID parameter
+C-0081 [taggable] AWS::Kinesis::Stream property [Tags] should exist 
+C-0082 [taggable] AWS::Lambda::Function property [Tags] should exist 
+C-0083 [logging] AWS::Logs::LogGroup property [LogGroupName] should exist 
+C-0084 [logging] AWS::Logs::LogStream property [LogGroupName] should exist 
+C-0085 [logging] AWS::Logs::LogStream property [LogStreamName] should exist 
+C-0086 [logging] AWS::Logs::MetricFilter property [LogGroupName] should exist 
+C-0087 [logging] AWS::Logs::SubscriptionFilter property [LogGroupName] should exist 
+C-0088 [encrypted] AWS::OpsWorks::App property [EnableSsl] should exist 
+C-0089 [zone-specific] AWS::OpsWorks::Instance property [AvailabilityZone] should exist 
+C-0090 [tenancy] AWS::OpsWorks::Instance property [Tenancy] should exist 
+C-0091 [logging] AWS::OpsWorks::Layer property [EnableAutoHealing] should exist 
+C-0092 [taggable] AWS::OpsWorks::Layer property [Tags] should exist 
+C-0093 [taggable] AWS::OpsWorks::Stack property [Tags] should exist 
+C-0094 [vpc-protection] AWS::OpsWorks::Stack property [VpcId] should exist 
+C-0095 [kms-encryption-key] AWS::RDS::DBCluster property [KmsKeyId] should exist 
+C-0096 [encrypted] AWS::RDS::DBCluster property [StorageEncrypted] should exist 
+C-0097 [taggable] AWS::RDS::DBCluster property [Tags] should exist 
+C-0098 [taggable] AWS::RDS::DBClusterParameterGroup property [Tags] should exist 
+C-0099 [zone-specific] AWS::RDS::DBInstance property [AvailabilityZone] should exist 
+C-0100 [kms-encryption-key] AWS::RDS::DBInstance property [KmsKeyId] should exist 
+C-0101 [encrypted] AWS::RDS::DBInstance property [StorageEncrypted] should exist 
+C-0102 [taggable] AWS::RDS::DBInstance property [Tags] should exist 
+C-0103 [taggable] AWS::RDS::DBParameterGroup property [Tags] should exist 
+C-0104 [vpc-protection] AWS::RDS::DBSecurityGroup property [EC2VpcId] should exist 
+C-0105 [taggable] AWS::RDS::DBSecurityGroup property [Tags] should exist 
+C-0106 [taggable] AWS::RDS::DBSubnetGroup property [Tags] should exist 
+C-0107 [taggable] AWS::RDS::OptionGroup property [Tags] should exist 
+C-0108 [zone-specific] AWS::Redshift::Cluster property [AvailabilityZone] should exist 
+C-0109 [encrypted] AWS::Redshift::Cluster property [Encrypted] should exist 
+C-0110 [kms-encryption-key] AWS::Redshift::Cluster property [KmsKeyId] should exist 
+C-0111 [logging] AWS::Redshift::Cluster property [LoggingProperties] should exist 
+C-0112 [taggable] AWS::Redshift::Cluster property [Tags] should exist 
+C-0113 [taggable] AWS::Redshift::ClusterParameterGroup property [Tags] should exist 
+C-0114 [taggable] AWS::Redshift::ClusterSecurityGroup property [Tags] should exist 
+C-0115 [taggable] AWS::Redshift::ClusterSubnetGroup property [Tags] should exist 
+C-0116 [logging] AWS::Route53::HostedZone property [QueryLoggingConfig] should exist 
+C-0117 [encrypted] AWS::S3::Bucket property [BucketEncryption] should exist 
+C-0118 [logging] AWS::S3::Bucket property [LoggingConfiguration] should exist 
+C-0119 [taggable] AWS::S3::Bucket property [Tags] should exist 
+C-0120 [logging] AWS::SSM::MaintenanceWindowTask property [LoggingInfo] should exist 
+C-0121 [encrypted] AWS::WorkSpaces::Workspace property [RootVolumeEncryptionEnabled] should exist 
+C-0122 [encrypted] AWS::WorkSpaces::Workspace property [UserVolumeEncryptionEnabled] should exist 
+C-0123 [kms-encryption-key] AWS::WorkSpaces::Workspace property [VolumeEncryptionKey] should exist 
+F1 EBS volume should have server-side encryption enabled
+F2 IAM role should not allow * action on its trust policy
+F3 IAM role should not allow * action on its permissions policy
+F4 IAM policy should not allow * action
+F5 IAM managed policy should not allow * action
+F6 IAM role should not allow Allow+NotPrincipal in its trust policy
+F7 SQS Queue policy should not allow Allow+NotPrincipal
+F8 SNS Topic policy should not allow Allow+NotPrincipal
+F9 S3 Bucket policy should not allow Allow+NotPrincipal
+F10 IAM user should not have any inline policies.  Should be centralized Policy object on group
+F11 IAM policy should not apply directly to users.  Should be on group
+F12 IAM managed policy should not apply directly to users.  Should be on group
+F13 Lambda permission principal should not be wildcard
+F14 S3 Bucket should not have a public read-write acl
+F15 S3 Bucket policy should not allow * action
+F16 S3 Bucket policy should not allow * principal
+F18 SNS topic policy should not allow * principal
+F20 SQS Queue policy should not allow * action
+F21 SQS Queue policy should not allow * principal
+F22 RDS instance should not be publicly accessible
+F23 RDS instance master user password must be Ref to NoEcho Parameter. Default credentials are not recommended
+F24 RDS instance master username must be Ref to NoEcho Parameter. Default credentials are not recommended
+F665 WebAcl DefaultAction should not be ALLOW
+F1000 Missing egress rule means all traffic is allowed outbound.  Make this explicit if it is desired configuration
+F2000 User is not assigned to a group
