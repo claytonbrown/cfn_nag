@@ -13,7 +13,7 @@ class AWSEC2SecurityGroup_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-40'
+    'taggable-40'
   end
 
   def audit_impl(cfn_model)

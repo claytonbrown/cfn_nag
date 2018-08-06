@@ -13,7 +13,7 @@ class AWSElasticsearchDomain_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-75'
+    'taggable-75'
   end
 
   def audit_impl(cfn_model)

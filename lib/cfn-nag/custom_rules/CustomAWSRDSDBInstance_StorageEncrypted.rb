@@ -13,7 +13,7 @@ class AWSRDSDBInstance_StorageEncrypted < BaseRule
   end
 
   def rule_id
-    'Custom-101'
+    'encrypted-101'
   end
 
   def audit_impl(cfn_model)

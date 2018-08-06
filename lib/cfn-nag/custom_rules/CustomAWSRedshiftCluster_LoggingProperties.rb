@@ -13,7 +13,7 @@ class AWSRedshiftCluster_LoggingProperties < BaseRule
   end
 
   def rule_id
-    'Custom-111'
+    'logging-111'
   end
 
   def audit_impl(cfn_model)

@@ -13,7 +13,7 @@ class AWSDMSReplicationTask_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-22'
+    'taggable-22'
   end
 
   def audit_impl(cfn_model)

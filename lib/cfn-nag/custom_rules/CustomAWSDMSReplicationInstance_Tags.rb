@@ -13,7 +13,7 @@ class AWSDMSReplicationInstance_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-20'
+    'taggable-20'
   end
 
   def audit_impl(cfn_model)

@@ -13,7 +13,7 @@ class AWSDMSEventSubscription_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-17'
+    'taggable-17'
   end
 
   def audit_impl(cfn_model)

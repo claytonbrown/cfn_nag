@@ -13,7 +13,7 @@ class AWSOpsWorksInstance_Tenancy < BaseRule
   end
 
   def rule_id
-    'Custom-90'
+    'tenancy-90'
   end
 
   def audit_impl(cfn_model)

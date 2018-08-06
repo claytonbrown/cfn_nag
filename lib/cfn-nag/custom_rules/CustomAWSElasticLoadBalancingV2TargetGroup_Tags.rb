@@ -13,7 +13,7 @@ class AWSElasticLoadBalancingV2TargetGroup_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-73'
+    'taggable-73'
   end
 
   def audit_impl(cfn_model)

@@ -13,7 +13,7 @@ class AWSOpsWorksLayer_EnableAutoHealing < BaseRule
   end
 
   def rule_id
-    'Custom-91'
+    'logging-91'
   end
 
   def audit_impl(cfn_model)

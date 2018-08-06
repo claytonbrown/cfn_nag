@@ -13,7 +13,7 @@ class AWSElasticLoadBalancingLoadBalancer_AccessLoggingPolicy < BaseRule
   end
 
   def rule_id
-    'Custom-70'
+    'logging-70'
   end
 
   def audit_impl(cfn_model)

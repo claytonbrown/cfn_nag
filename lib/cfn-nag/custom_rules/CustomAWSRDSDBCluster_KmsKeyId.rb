@@ -13,7 +13,7 @@ class AWSRDSDBCluster_KmsKeyId < BaseRule
   end
 
   def rule_id
-    'Custom-95'
+    'kms-encryption-key-95'
   end
 
   def audit_impl(cfn_model)

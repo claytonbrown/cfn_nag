@@ -13,7 +13,7 @@ class AWSOpsWorksApp_EnableSsl < BaseRule
   end
 
   def rule_id
-    'Custom-88'
+    'encrypted-88'
   end
 
   def audit_impl(cfn_model)

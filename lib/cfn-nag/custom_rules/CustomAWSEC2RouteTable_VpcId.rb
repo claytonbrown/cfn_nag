@@ -13,7 +13,7 @@ class AWSEC2RouteTable_VpcId < BaseRule
   end
 
   def rule_id
-    'Custom-39'
+    'vpc-protection-39'
   end
 
   def audit_impl(cfn_model)

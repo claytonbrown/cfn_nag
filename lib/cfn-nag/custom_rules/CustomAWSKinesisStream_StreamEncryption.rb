@@ -13,7 +13,7 @@ class AWSKinesisStream_StreamEncryption < BaseRule
   end
 
   def rule_id
-    'Custom-80'
+    'encrypted-80'
   end
 
   def audit_impl(cfn_model)

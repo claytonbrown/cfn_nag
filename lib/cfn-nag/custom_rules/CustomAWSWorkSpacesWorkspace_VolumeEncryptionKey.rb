@@ -13,7 +13,7 @@ class AWSWorkSpacesWorkspace_VolumeEncryptionKey < BaseRule
   end
 
   def rule_id
-    'Custom-123'
+    'kms-encryption-key-123'
   end
 
   def audit_impl(cfn_model)

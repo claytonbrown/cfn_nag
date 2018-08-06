@@ -13,7 +13,7 @@ class AWSCloudTrailTrail_EnableLogFileValidation < BaseRule
   end
 
   def rule_id
-    'Custom-8'
+    'encrypted-8'
   end
 
   def audit_impl(cfn_model)

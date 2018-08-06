@@ -13,7 +13,7 @@ class AWSOpsWorksLayer_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-92'
+    'taggable-92'
   end
 
   def audit_impl(cfn_model)

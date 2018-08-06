@@ -13,7 +13,7 @@ class AWSRoute53HostedZone_QueryLoggingConfig < BaseRule
   end
 
   def rule_id
-    'Custom-116'
+    'logging-116'
   end
 
   def audit_impl(cfn_model)

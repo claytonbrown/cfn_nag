@@ -13,7 +13,7 @@ class AWSEC2VPC_EnableDnsSupport < BaseRule
   end
 
   def rule_id
-    'Custom-46'
+    'logging-46'
   end
 
   def audit_impl(cfn_model)

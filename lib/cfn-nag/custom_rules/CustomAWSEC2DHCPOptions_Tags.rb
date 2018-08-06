@@ -13,7 +13,7 @@ class AWSEC2DHCPOptions_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-25'
+    'taggable-25'
   end
 
   def audit_impl(cfn_model)

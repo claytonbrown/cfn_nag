@@ -13,7 +13,7 @@ class AWSKMSKey_EnableKeyRotation < BaseRule
   end
 
   def rule_id
-    'Custom-78'
+    'encrypted-78'
   end
 
   def audit_impl(cfn_model)

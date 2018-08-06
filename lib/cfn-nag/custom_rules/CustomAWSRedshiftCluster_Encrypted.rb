@@ -13,7 +13,7 @@ class AWSRedshiftCluster_Encrypted < BaseRule
   end
 
   def rule_id
-    'Custom-109'
+    'encrypted-109'
   end
 
   def audit_impl(cfn_model)

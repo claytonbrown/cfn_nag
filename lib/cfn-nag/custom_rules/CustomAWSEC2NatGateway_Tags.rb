@@ -13,7 +13,7 @@ class AWSEC2NatGateway_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-34'
+    'taggable-34'
   end
 
   def audit_impl(cfn_model)

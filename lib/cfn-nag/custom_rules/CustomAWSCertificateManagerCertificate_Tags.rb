@@ -13,7 +13,7 @@ class AWSCertificateManagerCertificate_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-2'
+    'taggable-2'
   end
 
   def audit_impl(cfn_model)

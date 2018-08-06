@@ -22,7 +22,7 @@
     "lambdaPermission": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
-        "Action": "lambda:*",
+        "Action": "lambda:InvokeFunction",
         "FunctionName": {
           "Ref": "AppendItemToListFunction"
         },

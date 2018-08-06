@@ -13,7 +13,7 @@ class AWSEC2Instance_Tenancy < BaseRule
   end
 
   def rule_id
-    'Custom-32'
+    'tenancy-32'
   end
 
   def audit_impl(cfn_model)

@@ -13,7 +13,7 @@ class AWSEC2VPCPeeringConnection_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-52'
+    'taggable-52'
   end
 
   def audit_impl(cfn_model)

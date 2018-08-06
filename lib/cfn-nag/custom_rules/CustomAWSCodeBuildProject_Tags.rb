@@ -13,7 +13,7 @@ class AWSCodeBuildProject_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-13'
+    'taggable-13'
   end
 
   def audit_impl(cfn_model)

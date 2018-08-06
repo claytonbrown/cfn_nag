@@ -13,7 +13,7 @@ class AWSEC2VPCCidrBlock_VpcId < BaseRule
   end
 
   def rule_id
-    'Custom-48'
+    'vpc-protection-48'
   end
 
   def audit_impl(cfn_model)

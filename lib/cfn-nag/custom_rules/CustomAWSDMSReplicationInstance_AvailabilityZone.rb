@@ -13,7 +13,7 @@ class AWSDMSReplicationInstance_AvailabilityZone < BaseRule
   end
 
   def rule_id
-    'Custom-18'
+    'zone-specific-18'
   end
 
   def audit_impl(cfn_model)

@@ -13,7 +13,7 @@ class AWSCodeBuildProject_EncryptionKey < BaseRule
   end
 
   def rule_id
-    'Custom-12'
+    'kms-encryption-key-12'
   end
 
   def audit_impl(cfn_model)

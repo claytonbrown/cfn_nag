@@ -13,7 +13,7 @@ class AWSElasticLoadBalancingLoadBalancer_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-71'
+    'taggable-71'
   end
 
   def audit_impl(cfn_model)

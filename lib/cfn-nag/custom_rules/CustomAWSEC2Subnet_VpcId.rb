@@ -13,7 +13,7 @@ class AWSEC2Subnet_VpcId < BaseRule
   end
 
   def rule_id
-    'Custom-44'
+    'vpc-protection-44'
   end
 
   def audit_impl(cfn_model)

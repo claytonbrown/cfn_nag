@@ -13,7 +13,7 @@ class AWSGlueJob_LogUri < BaseRule
   end
 
   def rule_id
-    'Custom-77'
+    'logging-77'
   end
 
   def audit_impl(cfn_model)

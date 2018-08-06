@@ -13,7 +13,7 @@ class AWSElastiCacheReplicationGroup_AutomaticFailoverEnabled < BaseRule
   end
 
   def rule_id
-    'Custom-66'
+    'logging-66'
   end
 
   def audit_impl(cfn_model)

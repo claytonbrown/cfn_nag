@@ -13,7 +13,7 @@ class AWSElastiCacheReplicationGroup_TransitEncryptionEnabled < BaseRule
   end
 
   def rule_id
-    'Custom-68'
+    'encrypted-68'
   end
 
   def audit_impl(cfn_model)

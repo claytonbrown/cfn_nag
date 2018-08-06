@@ -13,7 +13,7 @@ class AWSEC2CustomerGateway_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-24'
+    'taggable-24'
   end
 
   def audit_impl(cfn_model)

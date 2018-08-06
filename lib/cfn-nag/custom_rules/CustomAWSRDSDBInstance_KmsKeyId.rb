@@ -13,7 +13,7 @@ class AWSRDSDBInstance_KmsKeyId < BaseRule
   end
 
   def rule_id
-    'Custom-100'
+    'kms-encryption-key-100'
   end
 
   def audit_impl(cfn_model)

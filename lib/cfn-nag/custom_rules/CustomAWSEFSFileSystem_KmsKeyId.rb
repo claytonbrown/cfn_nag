@@ -13,7 +13,7 @@ class AWSEFSFileSystem_KmsKeyId < BaseRule
   end
 
   def rule_id
-    'Custom-61'
+    'kms-encryption-key-61'
   end
 
   def audit_impl(cfn_model)

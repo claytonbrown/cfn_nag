@@ -13,7 +13,7 @@ class AWSLogsMetricFilter_LogGroupName < BaseRule
   end
 
   def rule_id
-    'Custom-86'
+    'logging-86'
   end
 
   def audit_impl(cfn_model)

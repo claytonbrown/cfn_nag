@@ -13,7 +13,7 @@ class AWSEC2FlowLog_DeliverLogsPermissionArn < BaseRule
   end
 
   def rule_id
-    'Custom-27'
+    'logging-27'
   end
 
   def audit_impl(cfn_model)

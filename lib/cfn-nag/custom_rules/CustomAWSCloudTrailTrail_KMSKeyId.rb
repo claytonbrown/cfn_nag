@@ -13,7 +13,7 @@ class AWSCloudTrailTrail_KMSKeyId < BaseRule
   end
 
   def rule_id
-    'Custom-10'
+    'kms-encryption-key-10'
   end
 
   def audit_impl(cfn_model)

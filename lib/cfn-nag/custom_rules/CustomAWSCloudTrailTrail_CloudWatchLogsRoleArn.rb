@@ -13,7 +13,7 @@ class AWSCloudTrailTrail_CloudWatchLogsRoleArn < BaseRule
   end
 
   def rule_id
-    'Custom-7'
+    'logging-7'
   end
 
   def audit_impl(cfn_model)

@@ -13,7 +13,7 @@ class AWSElasticBeanstalkEnvironment_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-69'
+    'taggable-69'
   end
 
   def audit_impl(cfn_model)

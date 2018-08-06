@@ -13,7 +13,7 @@ class AWSLogsSubscriptionFilter_LogGroupName < BaseRule
   end
 
   def rule_id
-    'Custom-87'
+    'logging-87'
   end
 
   def audit_impl(cfn_model)

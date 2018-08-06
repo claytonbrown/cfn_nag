@@ -13,7 +13,7 @@ class AWSEC2Volume_Encrypted < BaseRule
   end
 
   def rule_id
-    'Custom-57'
+    'encrypted-57'
   end
 
   def audit_impl(cfn_model)

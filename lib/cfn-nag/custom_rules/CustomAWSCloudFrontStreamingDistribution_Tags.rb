@@ -13,7 +13,7 @@ class AWSCloudFrontStreamingDistribution_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-5'
+    'taggable-5'
   end
 
   def audit_impl(cfn_model)

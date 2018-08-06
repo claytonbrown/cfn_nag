@@ -13,7 +13,7 @@ class AWSEC2VPCGatewayAttachment_VpcId < BaseRule
   end
 
   def rule_id
-    'Custom-51'
+    'vpc-protection-51'
   end
 
   def audit_impl(cfn_model)

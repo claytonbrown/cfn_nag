@@ -13,7 +13,7 @@ class AWSS3Bucket_LoggingConfiguration < BaseRule
   end
 
   def rule_id
-    'Custom-118'
+    'logging-118'
   end
 
   def audit_impl(cfn_model)

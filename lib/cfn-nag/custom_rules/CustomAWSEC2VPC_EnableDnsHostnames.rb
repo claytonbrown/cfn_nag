@@ -13,7 +13,7 @@ class AWSEC2VPC_EnableDnsHostnames < BaseRule
   end
 
   def rule_id
-    'Custom-45'
+    'logging-45'
   end
 
   def audit_impl(cfn_model)

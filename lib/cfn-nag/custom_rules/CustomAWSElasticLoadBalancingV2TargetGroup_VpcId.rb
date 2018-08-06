@@ -13,7 +13,7 @@ class AWSElasticLoadBalancingV2TargetGroup_VpcId < BaseRule
   end
 
   def rule_id
-    'Custom-74'
+    'vpc-protection-74'
   end
 
   def audit_impl(cfn_model)

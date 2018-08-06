@@ -13,7 +13,7 @@ class AWSEC2Subnet_AvailabilityZone < BaseRule
   end
 
   def rule_id
-    'Custom-42'
+    'zone-specific-42'
   end
 
   def audit_impl(cfn_model)

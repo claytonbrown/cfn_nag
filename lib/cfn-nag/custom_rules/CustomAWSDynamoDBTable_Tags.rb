@@ -13,7 +13,7 @@ class AWSDynamoDBTable_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-23'
+    'taggable-23'
   end
 
   def audit_impl(cfn_model)

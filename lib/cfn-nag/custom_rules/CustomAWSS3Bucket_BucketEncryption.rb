@@ -13,7 +13,7 @@ class AWSS3Bucket_BucketEncryption < BaseRule
   end
 
   def rule_id
-    'Custom-117'
+    'encrypted-117'
   end
 
   def audit_impl(cfn_model)

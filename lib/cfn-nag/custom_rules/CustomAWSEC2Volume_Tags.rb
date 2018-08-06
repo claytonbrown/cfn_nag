@@ -13,7 +13,7 @@ class AWSEC2Volume_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-59'
+    'taggable-59'
   end
 
   def audit_impl(cfn_model)

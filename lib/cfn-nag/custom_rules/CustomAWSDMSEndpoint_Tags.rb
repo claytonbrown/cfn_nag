@@ -13,7 +13,7 @@ class AWSDMSEndpoint_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-16'
+    'taggable-16'
   end
 
   def audit_impl(cfn_model)

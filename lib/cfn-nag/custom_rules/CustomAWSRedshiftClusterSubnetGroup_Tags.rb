@@ -13,7 +13,7 @@ class AWSRedshiftClusterSubnetGroup_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-115'
+    'taggable-115'
   end
 
   def audit_impl(cfn_model)

@@ -13,7 +13,7 @@ class AWSEC2VPCDHCPOptionsAssociation_VpcId < BaseRule
   end
 
   def rule_id
-    'Custom-49'
+    'vpc-protection-49'
   end
 
   def audit_impl(cfn_model)

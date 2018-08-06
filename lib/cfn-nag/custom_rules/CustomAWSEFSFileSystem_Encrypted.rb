@@ -13,7 +13,7 @@ class AWSEFSFileSystem_Encrypted < BaseRule
   end
 
   def rule_id
-    'Custom-60'
+    'encrypted-60'
   end
 
   def audit_impl(cfn_model)

@@ -13,7 +13,7 @@ class AWSOpsWorksStack_VpcId < BaseRule
   end
 
   def rule_id
-    'Custom-94'
+    'vpc-protection-94'
   end
 
   def audit_impl(cfn_model)

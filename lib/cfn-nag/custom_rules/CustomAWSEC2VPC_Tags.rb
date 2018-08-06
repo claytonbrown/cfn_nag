@@ -13,7 +13,7 @@ class AWSEC2VPC_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-47'
+    'taggable-47'
   end
 
   def audit_impl(cfn_model)

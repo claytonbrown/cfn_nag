@@ -13,7 +13,7 @@ class AWSRDSDBCluster_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-97'
+    'taggable-97'
   end
 
   def audit_impl(cfn_model)

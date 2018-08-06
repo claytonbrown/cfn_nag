@@ -13,7 +13,7 @@ class AWSDMSEndpoint_KmsKeyId < BaseRule
   end
 
   def rule_id
-    'Custom-15'
+    'kms-encryption-key-15'
   end
 
   def audit_impl(cfn_model)

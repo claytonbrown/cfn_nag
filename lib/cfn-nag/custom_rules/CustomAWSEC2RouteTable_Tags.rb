@@ -13,7 +13,7 @@ class AWSEC2RouteTable_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-38'
+    'taggable-38'
   end
 
   def audit_impl(cfn_model)

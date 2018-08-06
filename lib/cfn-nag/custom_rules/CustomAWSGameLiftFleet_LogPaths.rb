@@ -13,7 +13,7 @@ class AWSGameLiftFleet_LogPaths < BaseRule
   end
 
   def rule_id
-    'Custom-76'
+    'logging-76'
   end
 
   def audit_impl(cfn_model)

@@ -13,7 +13,7 @@ class AWSOpsWorksInstance_AvailabilityZone < BaseRule
   end
 
   def rule_id
-    'Custom-89'
+    'zone-specific-89'
   end
 
   def audit_impl(cfn_model)

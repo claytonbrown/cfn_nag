@@ -13,7 +13,7 @@ class AWSEC2VPCPeeringConnection_VpcId < BaseRule
   end
 
   def rule_id
-    'Custom-53'
+    'vpc-protection-53'
   end
 
   def audit_impl(cfn_model)

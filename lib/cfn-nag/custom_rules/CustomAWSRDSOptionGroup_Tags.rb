@@ -13,7 +13,7 @@ class AWSRDSOptionGroup_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-107'
+    'taggable-107'
   end
 
   def audit_impl(cfn_model)

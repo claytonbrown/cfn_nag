@@ -13,7 +13,7 @@ class AWSRedshiftCluster_KmsKeyId < BaseRule
   end
 
   def rule_id
-    'Custom-110'
+    'kms-encryption-key-110'
   end
 
   def audit_impl(cfn_model)

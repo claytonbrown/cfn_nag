@@ -13,7 +13,7 @@ class AWSEC2Volume_KmsKeyId < BaseRule
   end
 
   def rule_id
-    'Custom-58'
+    'kms-encryption-key-58'
   end
 
   def audit_impl(cfn_model)

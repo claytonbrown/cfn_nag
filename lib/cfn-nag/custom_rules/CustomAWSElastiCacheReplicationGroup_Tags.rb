@@ -13,7 +13,7 @@ class AWSElastiCacheReplicationGroup_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-67'
+    'taggable-67'
   end
 
   def audit_impl(cfn_model)
