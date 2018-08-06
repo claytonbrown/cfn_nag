@@ -13,7 +13,7 @@ class AWSCloudTrailTrail_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-9'
+    'Custom-11'
   end
 
   def audit_impl(cfn_model)

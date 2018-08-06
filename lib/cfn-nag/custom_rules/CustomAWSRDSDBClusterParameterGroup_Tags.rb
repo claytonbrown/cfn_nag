@@ -13,7 +13,7 @@ class AWSRDSDBClusterParameterGroup_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-85'
+    'Custom-98'
   end
 
   def audit_impl(cfn_model)

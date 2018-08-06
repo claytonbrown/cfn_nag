@@ -1,11 +1,11 @@
 
 require 'cfn-nag/violation'
-#require 'cfn-nag/custom_rules/base'
 require_relative 'base'
+#require 'cfn-nag/custom_rules/base'
 
 class AWSElastiCacheReplicationGroup_AutomaticFailoverEnabled < BaseRule
   def rule_text
-    ''
+    'AWS::ElastiCache::ReplicationGroup property [AutomaticFailoverEnabled] should exist '
   end
 
   def rule_type
@@ -13,12 +13,12 @@ class AWSElastiCacheReplicationGroup_AutomaticFailoverEnabled < BaseRule
   end
 
   def rule_id
-    'Custom-61'
+    'Custom-66'
   end
 
   def audit_impl(cfn_model)
     violating_resources = cfn_model.resources_by_type('AWS::ElastiCache::ReplicationGroup').select do |resource|
-      resource.automaticfailoverenabled.nil? || resource.automaticfailoverenabled.to_s.downcase != 'true'
+      resource.automaticfailoverenabled.nil?
     end
 
     violating_resources.map { |violating_resource| violating_resource.logical_resource_id }

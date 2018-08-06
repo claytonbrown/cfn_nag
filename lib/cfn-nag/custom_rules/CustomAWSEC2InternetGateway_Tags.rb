@@ -13,7 +13,7 @@ class AWSEC2InternetGateway_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-29'
+    'Custom-33'
   end
 
   def audit_impl(cfn_model)

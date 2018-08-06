@@ -13,7 +13,7 @@ class AWSRedshiftCluster_AvailabilityZone < BaseRule
   end
 
   def rule_id
-    'Custom-95'
+    'Custom-108'
   end
 
   def audit_impl(cfn_model)

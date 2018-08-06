@@ -1,11 +1,11 @@
 
 require 'cfn-nag/violation'
-#require 'cfn-nag/custom_rules/base'
 require_relative 'base'
+#require 'cfn-nag/custom_rules/base'
 
 class AWSCloudTrailTrail_KMSKeyId < BaseRule
   def rule_text
-    'AWS::CloudTrail::Trail property [KMSKeyId] should exist and be {"Ref": "KmsKeyId"}'
+    'AWS::CloudTrail::Trail property [KMSKeyId] should exist '
   end
 
   def rule_type
@@ -13,12 +13,12 @@ class AWSCloudTrailTrail_KMSKeyId < BaseRule
   end
 
   def rule_id
-    'Custom-8'
+    'Custom-10'
   end
 
   def audit_impl(cfn_model)
     violating_resources = cfn_model.resources_by_type('AWS::CloudTrail::Trail').select do |resource|
-      resource.kmskeyid.nil? || resource.kmskeyid.to_s.downcase != '{"ref": "kmskeyid"}'
+      resource.kmskeyid.nil?
     end
 
     violating_resources.map { |violating_resource| violating_resource.logical_resource_id }

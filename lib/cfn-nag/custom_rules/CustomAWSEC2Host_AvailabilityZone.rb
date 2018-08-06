@@ -13,7 +13,7 @@ class AWSEC2Host_AvailabilityZone < BaseRule
   end
 
   def rule_id
-    'Custom-25'
+    'Custom-29'
   end
 
   def audit_impl(cfn_model)

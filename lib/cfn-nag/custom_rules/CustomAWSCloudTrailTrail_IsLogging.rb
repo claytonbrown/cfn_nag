@@ -1,11 +1,11 @@
 
 require 'cfn-nag/violation'
-#require 'cfn-nag/custom_rules/base'
 require_relative 'base'
+#require 'cfn-nag/custom_rules/base'
 
 class AWSCloudTrailTrail_IsLogging < BaseRule
   def rule_text
-    ''
+    'AWS::CloudTrail::Trail property [IsLogging] should exist '
   end
 
   def rule_type
@@ -13,12 +13,12 @@ class AWSCloudTrailTrail_IsLogging < BaseRule
   end
 
   def rule_id
-    'Custom-7'
+    'Custom-9'
   end
 
   def audit_impl(cfn_model)
     violating_resources = cfn_model.resources_by_type('AWS::CloudTrail::Trail').select do |resource|
-      resource.islogging.nil? || resource.islogging.to_s.downcase != 'true'
+      resource.islogging.nil?
     end
 
     violating_resources.map { |violating_resource| violating_resource.logical_resource_id }

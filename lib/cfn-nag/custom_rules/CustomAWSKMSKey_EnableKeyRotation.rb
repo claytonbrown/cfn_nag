@@ -1,11 +1,11 @@
 
 require 'cfn-nag/violation'
-#require 'cfn-nag/custom_rules/base'
 require_relative 'base'
+#require 'cfn-nag/custom_rules/base'
 
 class AWSKMSKey_EnableKeyRotation < BaseRule
   def rule_text
-    ''
+    'AWS::KMS::Key property [EnableKeyRotation] should exist '
   end
 
   def rule_type
@@ -13,12 +13,12 @@ class AWSKMSKey_EnableKeyRotation < BaseRule
   end
 
   def rule_id
-    'Custom-70'
+    'Custom-78'
   end
 
   def audit_impl(cfn_model)
     violating_resources = cfn_model.resources_by_type('AWS::KMS::Key').select do |resource|
-      resource.enablekeyrotation.nil? || resource.enablekeyrotation.to_s.downcase != 'true'
+      resource.enablekeyrotation.nil?
     end
 
     violating_resources.map { |violating_resource| violating_resource.logical_resource_id }

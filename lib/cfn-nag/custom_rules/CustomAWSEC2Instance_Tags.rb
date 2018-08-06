@@ -13,7 +13,7 @@ class AWSEC2Instance_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-27'
+    'Custom-31'
   end
 
   def audit_impl(cfn_model)

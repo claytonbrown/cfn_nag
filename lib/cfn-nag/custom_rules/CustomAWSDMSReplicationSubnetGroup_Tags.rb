@@ -13,7 +13,7 @@ class AWSDMSReplicationSubnetGroup_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-19'
+    'Custom-21'
   end
 
   def audit_impl(cfn_model)

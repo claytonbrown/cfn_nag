@@ -1,11 +1,11 @@
 
 require 'cfn-nag/violation'
-#require 'cfn-nag/custom_rules/base'
 require_relative 'base'
+#require 'cfn-nag/custom_rules/base'
 
 class AWSElastiCacheReplicationGroup_TransitEncryptionEnabled < BaseRule
   def rule_text
-    'AWS::ElastiCache::ReplicationGroup property [TransitEncryptionEnabled] should exist and be True'
+    'AWS::ElastiCache::ReplicationGroup property [TransitEncryptionEnabled] should exist '
   end
 
   def rule_type
@@ -13,12 +13,12 @@ class AWSElastiCacheReplicationGroup_TransitEncryptionEnabled < BaseRule
   end
 
   def rule_id
-    'Custom-63'
+    'Custom-68'
   end
 
   def audit_impl(cfn_model)
     violating_resources = cfn_model.resources_by_type('AWS::ElastiCache::ReplicationGroup').select do |resource|
-      resource.transitencryptionenabled.nil? || resource.transitencryptionenabled.to_s.downcase != 'true'
+      resource.transitencryptionenabled.nil?
     end
 
     violating_resources.map { |violating_resource| violating_resource.logical_resource_id }

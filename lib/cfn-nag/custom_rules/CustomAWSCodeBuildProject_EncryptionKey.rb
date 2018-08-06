@@ -1,11 +1,11 @@
 
 require 'cfn-nag/violation'
-#require 'cfn-nag/custom_rules/base'
 require_relative 'base'
+#require 'cfn-nag/custom_rules/base'
 
 class AWSCodeBuildProject_EncryptionKey < BaseRule
   def rule_text
-    'AWS::CodeBuild::Project property [EncryptionKey] should exist and be {"Ref": "KmsKeyId"}'
+    'AWS::CodeBuild::Project property [EncryptionKey] should exist '
   end
 
   def rule_type
@@ -13,12 +13,12 @@ class AWSCodeBuildProject_EncryptionKey < BaseRule
   end
 
   def rule_id
-    'Custom-10'
+    'Custom-12'
   end
 
   def audit_impl(cfn_model)
     violating_resources = cfn_model.resources_by_type('AWS::CodeBuild::Project').select do |resource|
-      resource.encryptionkey.nil? || resource.encryptionkey.to_s.downcase != '{"ref": "kmskeyid"}'
+      resource.encryptionkey.nil?
     end
 
     violating_resources.map { |violating_resource| violating_resource.logical_resource_id }

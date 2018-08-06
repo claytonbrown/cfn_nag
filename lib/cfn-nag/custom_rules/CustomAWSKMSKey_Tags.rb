@@ -13,7 +13,7 @@ class AWSKMSKey_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-71'
+    'Custom-79'
   end
 
   def audit_impl(cfn_model)

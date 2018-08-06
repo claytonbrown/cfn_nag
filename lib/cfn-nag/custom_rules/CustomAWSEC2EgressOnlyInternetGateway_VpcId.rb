@@ -13,7 +13,7 @@ class AWSEC2EgressOnlyInternetGateway_VpcId < BaseRule
   end
 
   def rule_id
-    'Custom-24'
+    'Custom-26'
   end
 
   def audit_impl(cfn_model)

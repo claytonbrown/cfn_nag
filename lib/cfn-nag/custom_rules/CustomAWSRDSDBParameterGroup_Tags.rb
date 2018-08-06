@@ -13,7 +13,7 @@ class AWSRDSDBParameterGroup_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-90'
+    'Custom-103'
   end
 
   def audit_impl(cfn_model)

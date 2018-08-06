@@ -13,7 +13,7 @@ class AWSEC2Volume_AvailabilityZone < BaseRule
   end
 
   def rule_id
-    'Custom-52'
+    'Custom-56'
   end
 
   def audit_impl(cfn_model)

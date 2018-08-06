@@ -1,11 +1,11 @@
 
 require 'cfn-nag/violation'
-#require 'cfn-nag/custom_rules/base'
 require_relative 'base'
+#require 'cfn-nag/custom_rules/base'
 
 class AWSRedshiftCluster_KmsKeyId < BaseRule
   def rule_text
-    'AWS::Redshift::Cluster property [KmsKeyId] should exist and be {"Ref": "KmsKeyId"}'
+    'AWS::Redshift::Cluster property [KmsKeyId] should exist '
   end
 
   def rule_type
@@ -13,12 +13,12 @@ class AWSRedshiftCluster_KmsKeyId < BaseRule
   end
 
   def rule_id
-    'Custom-97'
+    'Custom-110'
   end
 
   def audit_impl(cfn_model)
     violating_resources = cfn_model.resources_by_type('AWS::Redshift::Cluster').select do |resource|
-      resource.kmskeyid.nil? || resource.kmskeyid.to_s.downcase != '{"ref": "kmskeyid"}'
+      resource.kmskeyid.nil?
     end
 
     violating_resources.map { |violating_resource| violating_resource.logical_resource_id }

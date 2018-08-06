@@ -1,11 +1,11 @@
 
 require 'cfn-nag/violation'
-#require 'cfn-nag/custom_rules/base'
 require_relative 'base'
+#require 'cfn-nag/custom_rules/base'
 
 class AWSWorkSpacesWorkspace_UserVolumeEncryptionEnabled < BaseRule
   def rule_text
-    'AWS::WorkSpaces::Workspace property [UserVolumeEncryptionEnabled] should exist and be True'
+    'AWS::WorkSpaces::Workspace property [UserVolumeEncryptionEnabled] should exist '
   end
 
   def rule_type
@@ -13,12 +13,12 @@ class AWSWorkSpacesWorkspace_UserVolumeEncryptionEnabled < BaseRule
   end
 
   def rule_id
-    'Custom-105'
+    'Custom-122'
   end
 
   def audit_impl(cfn_model)
     violating_resources = cfn_model.resources_by_type('AWS::WorkSpaces::Workspace').select do |resource|
-      resource.uservolumeencryptionenabled.nil? || resource.uservolumeencryptionenabled.to_s.downcase != 'true'
+      resource.uservolumeencryptionenabled.nil?
     end
 
     violating_resources.map { |violating_resource| violating_resource.logical_resource_id }

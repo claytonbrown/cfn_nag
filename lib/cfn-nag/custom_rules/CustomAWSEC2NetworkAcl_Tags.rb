@@ -13,7 +13,7 @@ class AWSEC2NetworkAcl_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-31'
+    'Custom-35'
   end
 
   def audit_impl(cfn_model)

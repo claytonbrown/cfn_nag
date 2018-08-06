@@ -13,7 +13,7 @@ class AWSRDSDBSubnetGroup_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-93'
+    'Custom-106'
   end
 
   def audit_impl(cfn_model)

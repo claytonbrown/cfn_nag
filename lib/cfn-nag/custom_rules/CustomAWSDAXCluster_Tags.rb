@@ -13,7 +13,7 @@ class AWSDAXCluster_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-12'
+    'Custom-14'
   end
 
   def audit_impl(cfn_model)

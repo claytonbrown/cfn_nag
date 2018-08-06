@@ -1,11 +1,11 @@
 
 require 'cfn-nag/violation'
-#require 'cfn-nag/custom_rules/base'
 require_relative 'base'
+#require 'cfn-nag/custom_rules/base'
 
 class AWSEC2VPC_EnableDnsSupport < BaseRule
   def rule_text
-    ''
+    'AWS::EC2::VPC property [EnableDnsSupport] should exist '
   end
 
   def rule_type
@@ -13,12 +13,12 @@ class AWSEC2VPC_EnableDnsSupport < BaseRule
   end
 
   def rule_id
-    'Custom-42'
+    'Custom-46'
   end
 
   def audit_impl(cfn_model)
     violating_resources = cfn_model.resources_by_type('AWS::EC2::VPC').select do |resource|
-      resource.enablednssupport.nil? || resource.enablednssupport.to_s.downcase != 'true'
+      resource.enablednssupport.nil?
     end
 
     violating_resources.map { |violating_resource| violating_resource.logical_resource_id }

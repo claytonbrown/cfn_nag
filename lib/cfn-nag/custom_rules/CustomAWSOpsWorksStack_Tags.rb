@@ -13,7 +13,7 @@ class AWSOpsWorksStack_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-80'
+    'Custom-93'
   end
 
   def audit_impl(cfn_model)

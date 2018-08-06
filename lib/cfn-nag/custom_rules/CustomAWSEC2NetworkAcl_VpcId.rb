@@ -13,7 +13,7 @@ class AWSEC2NetworkAcl_VpcId < BaseRule
   end
 
   def rule_id
-    'Custom-32'
+    'Custom-36'
   end
 
   def audit_impl(cfn_model)

@@ -1,11 +1,11 @@
 
 require 'cfn-nag/violation'
-#require 'cfn-nag/custom_rules/base'
 require_relative 'base'
+#require 'cfn-nag/custom_rules/base'
 
 class AWSWorkSpacesWorkspace_VolumeEncryptionKey < BaseRule
   def rule_text
-    'AWS::WorkSpaces::Workspace property [VolumeEncryptionKey] should exist and be {"Ref": "KmsKeyId"}'
+    'AWS::WorkSpaces::Workspace property [VolumeEncryptionKey] should exist '
   end
 
   def rule_type
@@ -13,12 +13,12 @@ class AWSWorkSpacesWorkspace_VolumeEncryptionKey < BaseRule
   end
 
   def rule_id
-    'Custom-106'
+    'Custom-123'
   end
 
   def audit_impl(cfn_model)
     violating_resources = cfn_model.resources_by_type('AWS::WorkSpaces::Workspace').select do |resource|
-      resource.volumeencryptionkey.nil? || resource.volumeencryptionkey.to_s.downcase != '{"ref": "kmskeyid"}'
+      resource.volumeencryptionkey.nil?
     end
 
     violating_resources.map { |violating_resource| violating_resource.logical_resource_id }

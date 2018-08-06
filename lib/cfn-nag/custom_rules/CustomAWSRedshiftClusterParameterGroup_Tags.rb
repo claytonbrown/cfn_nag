@@ -13,7 +13,7 @@ class AWSRedshiftClusterParameterGroup_Tags < BaseRule
   end
 
   def rule_id
-    'Custom-99'
+    'Custom-113'
   end
 
   def audit_impl(cfn_model)
