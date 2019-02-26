@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSOpsWorksLayerEnableAutoHealingRule < BaseRule
   def rule_text
-    "[logging] AWS::OpsWorks::Layer property [EnableAutoHealing] should exist, consider default values of [ True ] "
+    "[highavailability] AWS::OpsWorks::Layer property [EnableAutoHealing] should exist, consider default values of [ True ] "
   end
 
   def rule_type
