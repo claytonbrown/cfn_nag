@@ -12,7 +12,7 @@ class CustomAWSRedshiftClusterAvailabilityZoneRule < BaseRule
   end
 
   def rule_id
-    'C-0108'
+    'C-0165'
   end
 
   def audit_impl(cfn_model)

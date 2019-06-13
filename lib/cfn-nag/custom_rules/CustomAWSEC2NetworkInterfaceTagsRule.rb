@@ -12,7 +12,7 @@ class CustomAWSEC2NetworkInterfaceTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0037'
+    'C-0065'
   end
 
   def audit_impl(cfn_model)

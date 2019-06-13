@@ -12,7 +12,7 @@ class CustomAWSEC2DHCPOptionsTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0025'
+    'C-0053'
   end
 
   def audit_impl(cfn_model)

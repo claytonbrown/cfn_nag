@@ -12,7 +12,7 @@ class CustomAWSEMRClusterLogUriRule < BaseRule
   end
 
   def rule_id
-    'C-0062'
+    'C-0094'
   end
 
   def audit_impl(cfn_model)

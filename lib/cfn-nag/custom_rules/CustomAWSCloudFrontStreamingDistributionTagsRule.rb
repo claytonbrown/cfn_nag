@@ -12,7 +12,7 @@ class CustomAWSCloudFrontStreamingDistributionTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0005'
+    'C-0020'
   end
 
   def audit_impl(cfn_model)

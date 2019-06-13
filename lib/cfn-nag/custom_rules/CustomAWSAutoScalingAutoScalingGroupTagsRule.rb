@@ -12,7 +12,7 @@ class CustomAWSAutoScalingAutoScalingGroupTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0001'
+    'C-0014'
   end
 
   def audit_impl(cfn_model)

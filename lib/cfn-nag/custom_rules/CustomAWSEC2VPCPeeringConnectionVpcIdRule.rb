@@ -12,7 +12,7 @@ class CustomAWSEC2VPCPeeringConnectionVpcIdRule < BaseRule
   end
 
   def rule_id
-    'C-0053'
+    'C-0085'
   end
 
   def audit_impl(cfn_model)

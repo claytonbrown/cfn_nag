@@ -12,7 +12,7 @@ class CustomAWSCloudFormationStackTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0003'
+    'C-0017'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSEC2VolumeTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0059'
+    'C-0091'
   end
 
   def audit_impl(cfn_model)

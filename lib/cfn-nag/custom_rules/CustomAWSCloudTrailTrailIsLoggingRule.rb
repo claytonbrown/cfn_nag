@@ -12,7 +12,7 @@ class CustomAWSCloudTrailTrailIsLoggingRule < BaseRule
   end
 
   def rule_id
-    'C-0009'
+    'C-0026'
   end
 
   def audit_impl(cfn_model)

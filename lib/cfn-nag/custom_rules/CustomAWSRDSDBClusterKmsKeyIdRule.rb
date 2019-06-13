@@ -12,7 +12,7 @@ class CustomAWSRDSDBClusterKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0095'
+    'C-0152'
   end
 
   def audit_impl(cfn_model)

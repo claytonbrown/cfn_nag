@@ -12,7 +12,7 @@ class CustomAWSDynamoDBTableTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0023'
+    'C-0049'
   end
 
   def audit_impl(cfn_model)

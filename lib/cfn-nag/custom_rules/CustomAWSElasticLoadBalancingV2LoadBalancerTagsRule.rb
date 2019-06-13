@@ -12,7 +12,7 @@ class CustomAWSElasticLoadBalancingV2LoadBalancerTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0072'
+    'C-0107'
   end
 
   def audit_impl(cfn_model)

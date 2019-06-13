@@ -12,7 +12,7 @@ class CustomAWSSQSQueueKmsMasterKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0120'
+    'C-0186'
   end
 
   def audit_impl(cfn_model)

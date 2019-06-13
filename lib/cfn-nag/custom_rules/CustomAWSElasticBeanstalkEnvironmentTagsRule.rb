@@ -12,7 +12,7 @@ class CustomAWSElasticBeanstalkEnvironmentTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0069'
+    'C-0101'
   end
 
   def audit_impl(cfn_model)

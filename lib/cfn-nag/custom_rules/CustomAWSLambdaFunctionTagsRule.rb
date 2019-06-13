@@ -12,7 +12,7 @@ class CustomAWSLambdaFunctionTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0082'
+    'C-0127'
   end
 
   def audit_impl(cfn_model)
