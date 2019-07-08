@@ -1,35 +1,57 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
+require 'cfn-nag/cfn_nag_config'
 require 'cfn-nag/cfn_nag'
+require 'cfn-nag/cfn_nag_logging'
 require 'cfn-nag/profile_loader'
 
 describe CfnNag do
   before(:each) do
-    CfnNag.configure_logging(debug: false)
-    @cfn_nag = CfnNag.new
+    CfnNagLogging.configure_logging(debug: false)
+    @cfn_nag = CfnNag.new(config: CfnNagConfig.new)
   end
 
   describe '#audit_aggregate_across_files_and_render_results' do
     context 'json output' do
       it 'renders json results' do
-        @cfn_nag.audit_aggregate_across_files_and_render_results(
-          input_path: test_template_path('json/s3_bucket_policy/s3_bucket_with_wildcards.json'),
-          output_format: 'json'
-        )
-        # measuring stdout assertion here is going to be a pain and maybe
-        # fragile as rules are added just make sure the rendering doesn't
-        # blow i guess
+        expect do
+          @cfn_nag.audit_aggregate_across_files_and_render_results(
+            input_path: test_template_path('json/s3_bucket_policy/s3_bucket_with_wildcards.json'),
+            output_format: 'json'
+          )
+        end.to output(/"type": "FAIL"/).to_stdout
       end
     end
 
     context 'txt output' do
-      it 'renders json results' do
-        @cfn_nag.audit_aggregate_across_files_and_render_results(
-          input_path: test_template_path('json/s3_bucket_policy/s3_bucket_with_wildcards.json'),
-          output_format: 'txt'
-        )
-        # measuring stdout assertion here is going to be a pain and maybe
-        # fragile as rules are added just make sure the rendering doesn't
-        # blow i guess
+      it 'renders text results' do
+        expect do
+          @cfn_nag.audit_aggregate_across_files_and_render_results(
+            input_path: test_template_path('json/s3_bucket_policy/s3_bucket_with_wildcards.json'),
+            output_format: 'txt'
+          )
+        end.to output(/\| FAIL F15/).to_stdout
+      end
+
+      # \e[0;31;49m is the ANSI escape sequence for red
+      it 'colorizes failures as red' do
+        expect do
+          @cfn_nag.audit_aggregate_across_files_and_render_results(
+            input_path: test_template_path('json/s3_bucket_policy/s3_bucket_with_wildcards.json'),
+            output_format: 'txt'
+          )
+        end.to output(/\[0;31;49m/).to_stdout
+      end
+
+      # \e[0;33;49m is the ANSI escape sequence for yellow
+      it 'colorizes warnings as yellow' do
+        expect do
+          @cfn_nag.audit_aggregate_across_files_and_render_results(
+            input_path: test_template_path('yaml/security_group/sg_with_suppression.yml'),
+            output_format: 'txt'
+          )
+        end.to output(/\[0;33;49m/).to_stdout
       end
     end
   end
@@ -106,7 +128,8 @@ describe CfnNag do
                 Violation.new(
                   id: 'F16', type: Violation::FAILING_VIOLATION,
                   message: 'S3 Bucket policy should not allow * principal',
-                  logical_resource_ids: %w[S3BucketPolicy2]
+                  logical_resource_ids: %w[S3BucketPolicy2],
+                  line_numbers: [59]
                 )
               ]
             }
@@ -121,7 +144,7 @@ describe CfnNag do
                                    message: "fakeo#{num}")
         end
 
-        @cfn_nag = CfnNag.new(profile_definition: "F16\n")
+        @cfn_nag = CfnNag.new(config: CfnNagConfig.new(profile_definition: "F16\n"))
 
         actual_aggregate_results =
           @cfn_nag.audit_aggregate_across_files(
@@ -135,7 +158,7 @@ describe CfnNag do
   context 'when template has suppression metadata' do
     it 'ignores rules on suppressed resources' do
       template_name = 'yaml/security_group/sg_with_suppression.yml'
-      @cfn_nag = CfnNag.new print_suppression: true
+      @cfn_nag = CfnNag.new(config: CfnNagConfig.new(print_suppression: true))
 
       expected_aggregate_results = [
         {
@@ -146,17 +169,20 @@ describe CfnNag do
               Violation.new(
                 id: 'W9', type: Violation::WARNING,
                 message: 'Security Groups found with ingress cidr that is not /32',
-                logical_resource_ids: %w[sgOpenIngress]
+                logical_resource_ids: %w[sgOpenIngress],
+                line_numbers: [4]
               ),
               Violation.new(
                 id: 'W2', type: Violation::WARNING,
                 message: 'Security Groups found with cidr open to world on ingress.  This should never be true on instance.  Permissible on ELB',
-                logical_resource_ids: %w[sgOpenIngress]
+                logical_resource_ids: %w[sgOpenIngress],
+                line_numbers: [4]
               ),
               Violation.new(
                 id: 'F1000', type: Violation::FAILING_VIOLATION,
                 message: 'Missing egress rule means all traffic is allowed outbound.  Make this explicit if it is desired configuration',
-                logical_resource_ids: %w[sgOpenIngress]
+                logical_resource_ids: %w[sgOpenIngress],
+                line_numbers: [4]
               )
             ]
           }
@@ -182,7 +208,7 @@ EXPECTEDSTDERR
 
   context 'when template has suppression metadata and suppression is disallowed' do
     it 'ignores rules on suppressed resources' do
-      @cfn_nag = CfnNag.new(allow_suppression: false)
+      @cfn_nag = CfnNag.new(config: CfnNagConfig.new(allow_suppression: false))
 
       template_name = 'yaml/security_group/sg_with_suppression.yml'
 
@@ -195,17 +221,20 @@ EXPECTEDSTDERR
               Violation.new(
                 id: 'W9', type: Violation::WARNING,
                 message: 'Security Groups found with ingress cidr that is not /32',
-                logical_resource_ids: %w[sgOpenIngress sgOpenIngress2]
+                logical_resource_ids: %w[sgOpenIngress sgOpenIngress2],
+                line_numbers: [4, 21]
               ),
               Violation.new(
                 id: 'W2', type: Violation::WARNING,
                 message: 'Security Groups found with cidr open to world on ingress.  This should never be true on instance.  Permissible on ELB',
-                logical_resource_ids: %w[sgOpenIngress sgOpenIngress2]
+                logical_resource_ids: %w[sgOpenIngress sgOpenIngress2],
+                line_numbers: [4, 21]
               ),
               Violation.new(
                 id: 'F1000', type: Violation::FAILING_VIOLATION,
                 message: 'Missing egress rule means all traffic is allowed outbound.  Make this explicit if it is desired configuration',
-                logical_resource_ids: %w[sgOpenIngress sgOpenIngress2]
+                logical_resource_ids: %w[sgOpenIngress sgOpenIngress2],
+                line_numbers: [4, 21]
               )
             ]
           }
@@ -224,12 +253,12 @@ EXPECTEDSTDERR
     it 'raises an error' do
       template_name = 'yaml/security_group/sg_with_mangled_metadata.yml'
 
-      expect {
+      expect do
         _ = @cfn_nag.audit_aggregate_across_files(
           input_path: test_template_path(template_name)
         )
-      }.to output('sgOpenIngress2 has missing cfn_nag suppression rule id: [{"reason"=>"This security group is attached to internet-facing ELB"}]' + "\n")
-       .to_stderr_from_any_process
+      end.to output('sgOpenIngress2 has missing cfn_nag suppression rule id: [{"reason"=>"This security group is attached to internet-facing ELB"}]' + "\n")
+        .to_stderr_from_any_process
     end
   end
 

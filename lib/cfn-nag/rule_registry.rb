@@ -1,10 +1,17 @@
+# frozen_string_literal: true
+
 require_relative 'rule_definition'
 
 class RuleRegistry
-  attr_reader :rules
+  attr_reader :rules, :duplicate_ids
 
   def initialize
     @rules = []
+    @duplicate_ids = []
+  end
+
+  def duplicate_ids?
+    @duplicate_ids.count.positive?
   end
 
   def definition(id:,
@@ -18,7 +25,11 @@ class RuleRegistry
     if existing_def.nil?
       add_rule rule_definition
     else
-      existing_def
+      @duplicate_ids << {
+        id: id,
+        new_message: message,
+        registered_message: existing_def.message
+      }
     end
   end
 

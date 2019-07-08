@@ -1,4 +1,4 @@
-require 'rake'
+# frozen_string_literal: true
 
 Gem::Specification.new do |s|
   s.name          = 'cfn-nag'
@@ -10,17 +10,23 @@ Gem::Specification.new do |s|
   s.summary       = 'cfn-nag'
   s.description   = 'Auditing tool for CloudFormation templates'
   s.homepage      = 'https://github.com/stelligent/cfn_nag'
-  s.files         = FileList['lib/**/*.rb']
+  s.files         = Dir.glob('lib/**/*.rb')
 
   s.require_paths << 'lib'
 
-  s.required_ruby_version = '~> 2.2'
+  s.required_ruby_version = '>= 2.2'
 
+  s.add_development_dependency('rake')
   s.add_development_dependency('rspec', '~> 3.4')
   s.add_development_dependency('rubocop')
   s.add_development_dependency('simplecov', '~> 0.11')
 
-  s.add_runtime_dependency('cfn-model', '~> 0.1.23')
+  # don't relax this, i don't want different versions of cfn-model being installed after the fact
+  # versus what we used to run tests in cfn-nag before publishing cfn-nag
+  # they are coupled and we are doing a good bit of experimenting in cfn-model
+  # i might consider collapsing them again....
+  s.add_runtime_dependency('cfn-model', '0.4.0')
+  s.add_runtime_dependency('colorize', '0.8.1')
   s.add_runtime_dependency('jmespath', '~> 1.3.1')
   s.add_runtime_dependency('logging', '~> 2.2.2')
   s.add_runtime_dependency('netaddr', '~> 1.5.1')

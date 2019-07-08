@@ -1,10 +1,11 @@
 require 'spec_helper'
+require 'cfn-nag/cfn_nag_config'
 require 'cfn-nag/cfn_nag'
 
 describe CfnNag do
   before(:all) do
-    CfnNag.configure_logging(debug: false)
-    @cfn_nag = CfnNag.new
+    CfnNagLogging.configure_logging(debug: false)
+    @cfn_nag = CfnNag.new(config: CfnNagConfig.new)
   end
 
   context 'EBS volumes without encryption', :ebs do
@@ -21,7 +22,8 @@ describe CfnNag do
                 id: 'F1', type: Violation::FAILING_VIOLATION,
                 message:
                 'EBS volume should have server-side encryption enabled',
-                logical_resource_ids: %w[NewVolume1 NewVolume2]
+                logical_resource_ids: %w[NewVolume1 NewVolume2],
+                line_numbers: [4, 13]
               )
             ]
           }

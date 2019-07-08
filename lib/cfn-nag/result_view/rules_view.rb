@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # View rules warnings/failings
 class RulesView
   def emit(rule_registry, profile)
@@ -6,15 +8,29 @@ class RulesView
     puts
     puts 'FAILING VIOLATIONS:'
     emit_failings rule_registry.failings, profile
+
+    if rule_registry.duplicate_ids?
+      emit_duplicates(rule_registry.duplicate_ids)
+      exit 1
+    end
   end
 
   private
+
+  def emit_duplicates(duplicates)
+    duplicates.each do |info|
+      puts '------------------'.red
+      puts "Rule ID conflict detected for #{info[:id]}.".red
+      puts "New rule: #{info[:new_message]}".red
+      puts "Registered rule: #{info[:registered_message]}".red
+    end
+  end
 
   def emit_warnings(warnings, profile)
     warnings.sort { |left, right| sort_id(left, right) }.each do |warning|
       if profile.nil?
         puts "#{warning.id} #{warning.message}"
-      elsif profile.execute_rule?(warning.id)
+      elsif profile.contains_rule?(warning.id)
         puts "#{warning.id} #{warning.message}"
       end
     end
@@ -24,7 +40,7 @@ class RulesView
     failings.sort { |left, right| sort_id(left, right) }.each do |failing|
       if profile.nil?
         puts "#{failing.id} #{failing.message}"
-      elsif profile.execute_rule?(failing.id)
+      elsif profile.contains_rule?(failing.id)
         puts "#{failing.id} #{failing.message}"
       end
     end
