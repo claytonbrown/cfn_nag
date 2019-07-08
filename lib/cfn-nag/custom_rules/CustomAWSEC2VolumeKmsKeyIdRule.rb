@@ -12,7 +12,7 @@ class CustomAWSEC2VolumeKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0090'
+    'C-0109'
   end
 
   def audit_impl(cfn_model)

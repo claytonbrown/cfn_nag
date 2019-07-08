@@ -12,7 +12,7 @@ class CustomAWSFSxFileSystemTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0112'
+    'C-0139'
   end
 
   def audit_impl(cfn_model)

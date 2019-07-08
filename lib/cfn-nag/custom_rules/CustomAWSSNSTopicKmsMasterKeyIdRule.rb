@@ -12,7 +12,7 @@ class CustomAWSSNSTopicKmsMasterKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0185'
+    'C-0234'
   end
 
   def audit_impl(cfn_model)

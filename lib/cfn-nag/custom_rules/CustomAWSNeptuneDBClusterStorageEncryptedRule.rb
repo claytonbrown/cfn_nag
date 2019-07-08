@@ -12,7 +12,7 @@ class CustomAWSNeptuneDBClusterStorageEncryptedRule < BaseRule
   end
 
   def rule_id
-    'C-0134'
+    'C-0168'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSNeptuneDBClusterKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0133'
+    'C-0166'
   end
 
   def audit_impl(cfn_model)

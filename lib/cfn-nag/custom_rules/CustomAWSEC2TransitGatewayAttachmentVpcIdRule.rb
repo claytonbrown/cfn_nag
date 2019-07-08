@@ -12,7 +12,7 @@ class CustomAWSEC2TransitGatewayAttachmentVpcIdRule < BaseRule
   end
 
   def rule_id
-    'C-0075'
+    'C-0089'
   end
 
   def audit_impl(cfn_model)

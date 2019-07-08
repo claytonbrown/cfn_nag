@@ -12,7 +12,7 @@ class CustomAWSEMRClusterTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0095'
+    'C-0115'
   end
 
   def audit_impl(cfn_model)

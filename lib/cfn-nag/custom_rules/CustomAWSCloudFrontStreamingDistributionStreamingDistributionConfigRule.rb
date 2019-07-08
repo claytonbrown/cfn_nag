@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSCloudFrontStreamingDistributionStreamingDistributionConfigRule < BaseRule
   def rule_text
-    "[standards] AWS::CloudFront::StreamingDistribution property [StreamingDistributionConfig] should exist, consider default values of [ {'Logging': {'Bucket': {'Ref': 'LoggingDestination'}, 'Enabled': True, 'Prefix': {'Fn::Join': ['/', ['cloudfront', {'Ref': 'AWS::Region'}, {'Ref': 'AWS::StackName'}, '{{resource_name}}']]}}} ] "
+    "[standards] AWS::CloudFront::StreamingDistribution property [StreamingDistributionConfig] should exist, consider default values of [ {'Logging': {'Bucket': {'Ref': 'LoggingDestination'}, 'Enabled': True, 'Prefix': {'Fn::Join': ['/', ['cloudfront', {'Ref': 'AWS::Region'}, {'Ref': 'AWS::StackName'}, '{{TODO-resource_name}}']]}}} ] "
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSCloudFrontStreamingDistributionStreamingDistributionConfigRule < 
   end
 
   def rule_id
-    'C-0019'
+    'C-0025'
   end
 
   def audit_impl(cfn_model)

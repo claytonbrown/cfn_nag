@@ -12,7 +12,7 @@ class CustomAWSServiceCatalogPortfolioTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0204'
+    'C-0254'
   end
 
   def audit_impl(cfn_model)

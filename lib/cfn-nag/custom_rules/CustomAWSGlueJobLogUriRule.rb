@@ -12,7 +12,7 @@ class CustomAWSGlueJobLogUriRule < BaseRule
   end
 
   def rule_id
-    'C-0116'
+    'C-0143'
   end
 
   def audit_impl(cfn_model)

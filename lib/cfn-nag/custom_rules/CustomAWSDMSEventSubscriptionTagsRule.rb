@@ -12,7 +12,7 @@ class CustomAWSDMSEventSubscriptionTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0036'
+    'C-0043'
   end
 
   def audit_impl(cfn_model)

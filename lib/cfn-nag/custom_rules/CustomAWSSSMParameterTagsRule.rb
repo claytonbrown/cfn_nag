@@ -12,7 +12,7 @@ class CustomAWSSSMParameterTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0192'
+    'C-0241'
   end
 
   def audit_impl(cfn_model)

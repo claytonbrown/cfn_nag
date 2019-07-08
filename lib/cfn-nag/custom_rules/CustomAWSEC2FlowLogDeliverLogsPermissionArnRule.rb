@@ -12,7 +12,7 @@ class CustomAWSEC2FlowLogDeliverLogsPermissionArnRule < BaseRule
   end
 
   def rule_id
-    'C-0055'
+    'C-0067'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSOpsWorksInstanceAvailabilityZoneRule < BaseRule
   end
 
   def rule_id
-    'C-0142'
+    'C-0177'
   end
 
   def audit_impl(cfn_model)

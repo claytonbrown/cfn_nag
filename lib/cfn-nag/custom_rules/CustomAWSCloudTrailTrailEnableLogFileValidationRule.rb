@@ -12,7 +12,7 @@ class CustomAWSCloudTrailTrailEnableLogFileValidationRule < BaseRule
   end
 
   def rule_id
-    'C-0024'
+    'C-0030'
   end
 
   def audit_impl(cfn_model)

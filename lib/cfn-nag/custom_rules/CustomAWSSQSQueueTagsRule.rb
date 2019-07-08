@@ -12,7 +12,7 @@ class CustomAWSSQSQueueTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0187'
+    'C-0236'
   end
 
   def audit_impl(cfn_model)

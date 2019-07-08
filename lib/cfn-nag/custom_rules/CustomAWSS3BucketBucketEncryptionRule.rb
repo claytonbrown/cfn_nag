@@ -12,7 +12,7 @@ class CustomAWSS3BucketBucketEncryptionRule < BaseRule
   end
 
   def rule_id
-    'C-0180'
+    'C-0229'
   end
 
   def audit_impl(cfn_model)

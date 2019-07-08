@@ -12,7 +12,7 @@ class CustomAWSWorkSpacesWorkspaceTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0210'
+    'C-0261'
   end
 
   def audit_impl(cfn_model)

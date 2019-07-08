@@ -12,7 +12,7 @@ class CustomAWSRAMResourceShareTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0151'
+    'C-0189'
   end
 
   def audit_impl(cfn_model)

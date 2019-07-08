@@ -12,7 +12,7 @@ class CustomAWSDAXClusterTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0033'
+    'C-0040'
   end
 
   def audit_impl(cfn_model)

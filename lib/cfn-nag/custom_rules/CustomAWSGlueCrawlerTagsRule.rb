@@ -12,7 +12,7 @@ class CustomAWSGlueCrawlerTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0114'
+    'C-0141'
   end
 
   def audit_impl(cfn_model)

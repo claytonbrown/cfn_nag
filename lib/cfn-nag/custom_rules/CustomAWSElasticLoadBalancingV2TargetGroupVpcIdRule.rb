@@ -12,7 +12,7 @@ class CustomAWSElasticLoadBalancingV2TargetGroupVpcIdRule < BaseRule
   end
 
   def rule_id
-    'C-0109'
+    'C-0136'
   end
 
   def audit_impl(cfn_model)
