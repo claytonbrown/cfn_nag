@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSOpsWorksInstanceTenancyRule < BaseRule
   def rule_text
-    "[tenancy] AWS::OpsWorks::Instance property [Tenancy] should exist, consider default values of [ {'Ref': 'Tenancy'} ] "
+    "[tenancy] AWS::OpsWorks::Instance property [Tenancy] should exist, consider default values of [ {'Ref': 'Tenancy'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSOpsWorksInstanceTenancyRule < BaseRule
   end
 
   def rule_id
-    'C-0178'
+    'C-0194'
   end
 
   def audit_impl(cfn_model)

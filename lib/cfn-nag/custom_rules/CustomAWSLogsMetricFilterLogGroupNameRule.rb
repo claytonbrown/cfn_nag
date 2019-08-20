@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSLogsMetricFilterLogGroupNameRule < BaseRule
   def rule_text
-    "[logging] AWS::Logs::MetricFilter property [LogGroupName] should exist"
+    "[logging] AWS::Logs::MetricFilter property [LogGroupName] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSLogsMetricFilterLogGroupNameRule < BaseRule
   end
 
   def rule_id
-    'C-0160'
+    'C-0172'
   end
 
   def audit_impl(cfn_model)

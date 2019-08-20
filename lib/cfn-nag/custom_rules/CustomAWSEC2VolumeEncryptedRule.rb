@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2VolumeEncryptedRule < BaseRule
   def rule_text
-    "[encrypted] AWS::EC2::Volume property [Encrypted] should exist, consider default values of [ True ] "
+    "[encrypted] AWS::EC2::Volume property [Encrypted] should exist, consider default values of [ True ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSEC2VolumeEncryptedRule < BaseRule
   end
 
   def rule_id
-    'C-0108'
+    'C-0113'
   end
 
   def audit_impl(cfn_model)

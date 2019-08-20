@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSCodeBuildProjectLogsConfigRule < BaseRule
   def rule_text
-    "[standards] AWS::CodeBuild::Project property [LogsConfig] should exist, consider default values of [ {'GroupName': 'TODO', 'Status': 'ENABLED', 'StreamName': 'TODO'} ] "
+    "[standards] AWS::CodeBuild::Project property [LogsConfig] should exist, consider default values of [ {'GroupName': 'TODO', 'Status': 'ENABLED', 'StreamName': 'TODO'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSCodeBuildProjectLogsConfigRule < BaseRule
   end
 
   def rule_id
-    'C-0037'
+    'C-0042'
   end
 
   def audit_impl(cfn_model)

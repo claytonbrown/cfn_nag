@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSCloudTrailTrailCloudWatchLogsLogGroupArnRule < BaseRule
   def rule_text
-    "[logging] AWS::CloudTrail::Trail property [CloudWatchLogsLogGroupArn] should exist"
+    "[logging] AWS::CloudTrail::Trail property [CloudWatchLogsLogGroupArn] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSCloudTrailTrailCloudWatchLogsLogGroupArnRule < BaseRule
   end
 
   def rule_id
-    'C-0027'
+    'C-0032'
   end
 
   def audit_impl(cfn_model)

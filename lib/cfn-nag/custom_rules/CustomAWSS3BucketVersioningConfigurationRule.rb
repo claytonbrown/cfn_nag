@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSS3BucketVersioningConfigurationRule < BaseRule
   def rule_text
-    "[standards] AWS::S3::Bucket property [VersioningConfiguration] should exist, consider default values of [ {'Status': 'Enabled'} ] "
+    "[standards] AWS::S3::Bucket property [VersioningConfiguration] should exist, consider default values of [ {'Status': 'Enabled'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSS3BucketVersioningConfigurationRule < BaseRule
   end
 
   def rule_id
-    'C-0233'
+    'C-0249'
   end
 
   def audit_impl(cfn_model)

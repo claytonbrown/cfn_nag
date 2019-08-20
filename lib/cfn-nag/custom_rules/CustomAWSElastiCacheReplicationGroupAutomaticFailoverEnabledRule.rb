@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSElastiCacheReplicationGroupAutomaticFailoverEnabledRule < BaseRule
   def rule_text
-    "[highavailability] AWS::ElastiCache::ReplicationGroup property [AutomaticFailoverEnabled] should exist, consider default values of [ True ] "
+    "[highavailability] AWS::ElastiCache::ReplicationGroup property [AutomaticFailoverEnabled] should exist, consider default values of [ True ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSElastiCacheReplicationGroupAutomaticFailoverEnabledRule < BaseRul
   end
 
   def rule_id
-    'C-0122'
+    'C-0131'
   end
 
   def audit_impl(cfn_model)

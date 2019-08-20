@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSApiGatewayV2ApiDisableSchemaValidationRule < BaseRule
   def rule_text
-    "[standards] AWS::ApiGatewayV2::Api property [DisableSchemaValidation] should exist, consider default values of [ False ] "
+    "[standards] AWS::ApiGatewayV2::Api property [DisableSchemaValidation] should exist, consider default values of [ False ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSApiGatewayV2ApiDisableSchemaValidationRule < BaseRule
   end
 
   def rule_id
-    'C-0006'
+    'C-0008'
   end
 
   def audit_impl(cfn_model)

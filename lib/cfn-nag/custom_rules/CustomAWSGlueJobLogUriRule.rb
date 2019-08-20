@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSGlueJobLogUriRule < BaseRule
   def rule_text
-    "[logging] AWS::Glue::Job property [LogUri] should exist"
+    "[logging] AWS::Glue::Job property [LogUri] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSGlueJobLogUriRule < BaseRule
   end
 
   def rule_id
-    'C-0143'
+    'C-0152'
   end
 
   def audit_impl(cfn_model)

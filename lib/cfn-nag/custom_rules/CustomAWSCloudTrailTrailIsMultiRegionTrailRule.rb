@@ -12,7 +12,7 @@ class CustomAWSCloudTrailTrailIsMultiRegionTrailRule < BaseRule
   end
 
   def rule_id
-    'C-0027'
+    'C-0029'
   end
 
   def audit_impl(cfn_model)
@@ -23,4 +23,3 @@ class CustomAWSCloudTrailTrailIsMultiRegionTrailRule < BaseRule
     violating_resources.map { |violating_resource| violating_resource.logical_resource_id }
   end
 end
-        

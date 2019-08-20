@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRDSDBInstanceDeleteAutomatedBackupsRule < BaseRule
   def rule_text
-    "[standards] AWS::RDS::DBInstance property [DeleteAutomatedBackups] should exist, consider default values of [ False ] "
+    "[standards] AWS::RDS::DBInstance property [DeleteAutomatedBackups] should exist, consider default values of [ False ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSRDSDBInstanceDeleteAutomatedBackupsRule < BaseRule
   end
 
   def rule_id
-    'C-0201'
+    'C-0217'
   end
 
   def audit_impl(cfn_model)

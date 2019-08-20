@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSDocDBDBClusterKmsKeyIdRule < BaseRule
   def rule_text
-    "[kms-encryption-key] AWS::DocDB::DBCluster property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ] "
+    "[kms-encryption-key] AWS::DocDB::DBCluster property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSDocDBDBClusterKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0053'
+    'C-0058'
   end
 
   def audit_impl(cfn_model)

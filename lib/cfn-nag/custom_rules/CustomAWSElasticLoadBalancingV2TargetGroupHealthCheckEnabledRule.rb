@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSElasticLoadBalancingV2TargetGroupHealthCheckEnabledRule < BaseRule
   def rule_text
-    "[standards] AWS::ElasticLoadBalancingV2::TargetGroup property [HealthCheckEnabled] should exist, consider default values of [ True ] "
+    "[standards] AWS::ElasticLoadBalancingV2::TargetGroup property [HealthCheckEnabled] should exist, consider default values of [ True ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSElasticLoadBalancingV2TargetGroupHealthCheckEnabledRule < BaseRul
   end
 
   def rule_id
-    'C-0134'
+    'C-0143'
   end
 
   def audit_impl(cfn_model)

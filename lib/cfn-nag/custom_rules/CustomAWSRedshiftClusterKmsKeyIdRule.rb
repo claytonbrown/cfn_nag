@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRedshiftClusterKmsKeyIdRule < BaseRule
   def rule_text
-    "[kms-encryption-key] AWS::Redshift::Cluster property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ] "
+    "[kms-encryption-key] AWS::Redshift::Cluster property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSRedshiftClusterKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0216'
+    'C-0232'
   end
 
   def audit_impl(cfn_model)

@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2VolumeAvailabilityZoneRule < BaseRule
   def rule_text
-    "[zone-specific] AWS::EC2::Volume property [AvailabilityZone] should exist"
+    "[zone-specific] AWS::EC2::Volume property [AvailabilityZone] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSEC2VolumeAvailabilityZoneRule < BaseRule
   end
 
   def rule_id
-    'C-0106'
+    'C-0111'
   end
 
   def audit_impl(cfn_model)

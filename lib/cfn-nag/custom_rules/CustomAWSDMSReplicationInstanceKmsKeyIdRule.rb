@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSDMSReplicationInstanceKmsKeyIdRule < BaseRule
   def rule_text
-    "[kms-encryption-key] AWS::DMS::ReplicationInstance property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ] "
+    "[kms-encryption-key] AWS::DMS::ReplicationInstance property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSDMSReplicationInstanceKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0045'
+    'C-0050'
   end
 
   def audit_impl(cfn_model)

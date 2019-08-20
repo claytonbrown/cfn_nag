@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSFSxFileSystemKmsKeyIdRule < BaseRule
   def rule_text
-    "[kms-encryption-key] AWS::FSx::FileSystem property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ] "
+    "[kms-encryption-key] AWS::FSx::FileSystem property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSFSxFileSystemKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0138'
+    'C-0147'
   end
 
   def audit_impl(cfn_model)

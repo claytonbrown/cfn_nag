@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSNeptuneDBClusterAvailabilityZonesRule < BaseRule
   def rule_text
-    "[zone-specific] AWS::Neptune::DBCluster property [AvailabilityZones] should exist"
+    "[zone-specific] AWS::Neptune::DBCluster property [AvailabilityZones] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSNeptuneDBClusterAvailabilityZonesRule < BaseRule
   end
 
   def rule_id
-    'C-0163'
+    'C-0179'
   end
 
   def audit_impl(cfn_model)

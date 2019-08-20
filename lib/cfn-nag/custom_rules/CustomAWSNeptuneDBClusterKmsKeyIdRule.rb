@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSNeptuneDBClusterKmsKeyIdRule < BaseRule
   def rule_text
-    "[kms-encryption-key] AWS::Neptune::DBCluster property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ] "
+    "[kms-encryption-key] AWS::Neptune::DBCluster property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSNeptuneDBClusterKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0166'
+    'C-0182'
   end
 
   def audit_impl(cfn_model)

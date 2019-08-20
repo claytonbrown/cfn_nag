@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSSageMakerNotebookInstanceKmsKeyIdRule < BaseRule
   def rule_text
-    "[kms-encryption-key] AWS::SageMaker::NotebookInstance property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ] "
+    "[kms-encryption-key] AWS::SageMaker::NotebookInstance property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSSageMakerNotebookInstanceKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0248'
+    'C-0264'
   end
 
   def audit_impl(cfn_model)

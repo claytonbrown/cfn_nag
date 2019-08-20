@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSCloudTrailTrailIsLoggingRule < BaseRule
   def rule_text
-    "[logging] AWS::CloudTrail::Trail property [IsLogging] should exist, consider default values of [ True ] "
+    "[logging] AWS::CloudTrail::Trail property [IsLogging] should exist, consider default values of [ True ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSCloudTrailTrailIsLoggingRule < BaseRule
   end
 
   def rule_id
-    'C-0032'
+    'C-0037'
   end
 
   def audit_impl(cfn_model)

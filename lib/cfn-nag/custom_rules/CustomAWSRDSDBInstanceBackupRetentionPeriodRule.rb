@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRDSDBInstanceBackupRetentionPeriodRule < BaseRule
   def rule_text
-    "[resilience] AWS::RDS::DBInstance property [BackupRetentionPeriod] should exist, consider default values of [ 35 ] "
+    "[resilience] AWS::RDS::DBInstance property [BackupRetentionPeriod] should exist, consider default values of [ 35 ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSRDSDBInstanceBackupRetentionPeriodRule < BaseRule
   end
 
   def rule_id
-    'C-0199'
+    'C-0215'
   end
 
   def audit_impl(cfn_model)

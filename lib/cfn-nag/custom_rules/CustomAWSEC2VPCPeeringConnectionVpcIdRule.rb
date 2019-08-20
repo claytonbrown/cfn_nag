@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2VPCPeeringConnectionVpcIdRule < BaseRule
   def rule_text
-    "[vpc-protection] AWS::EC2::VPCPeeringConnection property [VpcId] should exist, consider default values of [ {'Ref': 'VpcId'} ] "
+    "[vpc-protection] AWS::EC2::VPCPeeringConnection property [VpcId] should exist, consider default values of [ {'Ref': 'VpcId'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSEC2VPCPeeringConnectionVpcIdRule < BaseRule
   end
 
   def rule_id
-    'C-0102'
+    'C-0107'
   end
 
   def audit_impl(cfn_model)

@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2NetworkInterfaceAttachmentDeleteOnTerminationRule < BaseRule
   def rule_text
-    "[standards] AWS::EC2::NetworkInterfaceAttachment property [DeleteOnTermination] should exist, consider default values of [ False ] "
+    "[standards] AWS::EC2::NetworkInterfaceAttachment property [DeleteOnTermination] should exist, consider default values of [ False ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSEC2NetworkInterfaceAttachmentDeleteOnTerminationRule < BaseRule
   end
 
   def rule_id
-    'C-0079'
+    'C-0084'
   end
 
   def audit_impl(cfn_model)

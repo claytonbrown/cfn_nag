@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSLogsSubscriptionFilterLogGroupNameRule < BaseRule
   def rule_text
-    "[logging] AWS::Logs::SubscriptionFilter property [LogGroupName] should exist"
+    "[logging] AWS::Logs::SubscriptionFilter property [LogGroupName] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSLogsSubscriptionFilterLogGroupNameRule < BaseRule
   end
 
   def rule_id
-    'C-0161'
+    'C-0173'
   end
 
   def audit_impl(cfn_model)

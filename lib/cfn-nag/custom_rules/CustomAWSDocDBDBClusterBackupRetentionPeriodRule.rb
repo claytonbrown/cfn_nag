@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSDocDBDBClusterBackupRetentionPeriodRule < BaseRule
   def rule_text
-    "[resilience] AWS::DocDB::DBCluster property [BackupRetentionPeriod] should exist, consider default values of [ 35 ] "
+    "[resilience] AWS::DocDB::DBCluster property [BackupRetentionPeriod] should exist, consider default values of [ 35 ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSDocDBDBClusterBackupRetentionPeriodRule < BaseRule
   end
 
   def rule_id
-    'C-0052'
+    'C-0057'
   end
 
   def audit_impl(cfn_model)

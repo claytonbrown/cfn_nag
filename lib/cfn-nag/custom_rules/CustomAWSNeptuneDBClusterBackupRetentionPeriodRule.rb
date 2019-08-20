@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSNeptuneDBClusterBackupRetentionPeriodRule < BaseRule
   def rule_text
-    "[resilience] AWS::Neptune::DBCluster property [BackupRetentionPeriod] should exist, consider default values of [ 35 ] "
+    "[resilience] AWS::Neptune::DBCluster property [BackupRetentionPeriod] should exist, consider default values of [ 35 ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSNeptuneDBClusterBackupRetentionPeriodRule < BaseRule
   end
 
   def rule_id
-    'C-0164'
+    'C-0180'
   end
 
   def audit_impl(cfn_model)

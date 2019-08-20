@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2SubnetAvailabilityZoneRule < BaseRule
   def rule_text
-    "[zone-specific] AWS::EC2::Subnet property [AvailabilityZone] should exist"
+    "[zone-specific] AWS::EC2::Subnet property [AvailabilityZone] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSEC2SubnetAvailabilityZoneRule < BaseRule
   end
 
   def rule_id
-    'C-0084'
+    'C-0089'
   end
 
   def audit_impl(cfn_model)

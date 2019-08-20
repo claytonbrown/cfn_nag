@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRDSDBClusterAvailabilityZonesRule < BaseRule
   def rule_text
-    "[zone-specific] AWS::RDS::DBCluster property [AvailabilityZones] should exist"
+    "[zone-specific] AWS::RDS::DBCluster property [AvailabilityZones] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSRDSDBClusterAvailabilityZonesRule < BaseRule
   end
 
   def rule_id
-    'C-0190'
+    'C-0206'
   end
 
   def audit_impl(cfn_model)

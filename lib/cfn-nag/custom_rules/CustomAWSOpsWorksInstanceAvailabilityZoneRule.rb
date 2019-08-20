@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSOpsWorksInstanceAvailabilityZoneRule < BaseRule
   def rule_text
-    "[zone-specific] AWS::OpsWorks::Instance property [AvailabilityZone] should exist"
+    "[zone-specific] AWS::OpsWorks::Instance property [AvailabilityZone] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSOpsWorksInstanceAvailabilityZoneRule < BaseRule
   end
 
   def rule_id
-    'C-0177'
+    'C-0193'
   end
 
   def audit_impl(cfn_model)

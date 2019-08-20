@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSSNSTopicKmsMasterKeyIdRule < BaseRule
   def rule_text
-    "[kms-encryption-key] AWS::SNS::Topic property [KmsMasterKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ] "
+    "[kms-encryption-key] AWS::SNS::Topic property [KmsMasterKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSSNSTopicKmsMasterKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0234'
+    'C-0250'
   end
 
   def audit_impl(cfn_model)

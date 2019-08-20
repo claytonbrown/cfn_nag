@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRDSDBClusterEnableIAMDatabaseAuthenticationRule < BaseRule
   def rule_text
-    "[standards] AWS::RDS::DBCluster property [EnableIAMDatabaseAuthentication] should exist, consider default values of [ True ] "
+    "[standards] AWS::RDS::DBCluster property [EnableIAMDatabaseAuthentication] should exist, consider default values of [ True ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSRDSDBClusterEnableIAMDatabaseAuthenticationRule < BaseRule
   end
 
   def rule_id
-    'C-0192'
+    'C-0208'
   end
 
   def audit_impl(cfn_model)

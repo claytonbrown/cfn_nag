@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSS3BucketLoggingConfigurationRule < BaseRule
   def rule_text
-    "[logging] AWS::S3::Bucket property [LoggingConfiguration] should exist"
+    "[logging] AWS::S3::Bucket property [LoggingConfiguration] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSS3BucketLoggingConfigurationRule < BaseRule
   end
 
   def rule_id
-    'C-0231'
+    'C-0247'
   end
 
   def audit_impl(cfn_model)

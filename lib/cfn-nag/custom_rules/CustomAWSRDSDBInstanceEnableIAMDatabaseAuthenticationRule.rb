@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRDSDBInstanceEnableIAMDatabaseAuthenticationRule < BaseRule
   def rule_text
-    "[standards] AWS::RDS::DBInstance property [EnableIAMDatabaseAuthentication] should exist, consider default values of [ True ] "
+    "[standards] AWS::RDS::DBInstance property [EnableIAMDatabaseAuthentication] should exist, consider default values of [ True ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSRDSDBInstanceEnableIAMDatabaseAuthenticationRule < BaseRule
   end
 
   def rule_id
-    'C-0202'
+    'C-0218'
   end
 
   def audit_impl(cfn_model)

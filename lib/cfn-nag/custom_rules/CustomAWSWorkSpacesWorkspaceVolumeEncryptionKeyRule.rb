@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSWorkSpacesWorkspaceVolumeEncryptionKeyRule < BaseRule
   def rule_text
-    "[kms-encryption-key] AWS::WorkSpaces::Workspace property [VolumeEncryptionKey] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ] "
+    "[kms-encryption-key] AWS::WorkSpaces::Workspace property [VolumeEncryptionKey] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSWorkSpacesWorkspaceVolumeEncryptionKeyRule < BaseRule
   end
 
   def rule_id
-    'C-0264'
+    'C-0281'
   end
 
   def audit_impl(cfn_model)

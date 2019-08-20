@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2CapacityReservationTenancyRule < BaseRule
   def rule_text
-    "[tenancy] AWS::EC2::CapacityReservation property [Tenancy] should exist, consider default values of [ {'Ref': 'Tenancy'} ] "
+    "[tenancy] AWS::EC2::CapacityReservation property [Tenancy] should exist, consider default values of [ {'Ref': 'Tenancy'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSEC2CapacityReservationTenancyRule < BaseRule
   end
 
   def rule_id
-    'C-0063'
+    'C-0068'
   end
 
   def audit_impl(cfn_model)

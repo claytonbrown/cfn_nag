@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSCodeBuildProjectEncryptionKeyRule < BaseRule
   def rule_text
-    "[kms-encryption-key] AWS::CodeBuild::Project property [EncryptionKey] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ] "
+    "[kms-encryption-key] AWS::CodeBuild::Project property [EncryptionKey] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSCodeBuildProjectEncryptionKeyRule < BaseRule
   end
 
   def rule_id
-    'C-0036'
+    'C-0041'
   end
 
   def audit_impl(cfn_model)

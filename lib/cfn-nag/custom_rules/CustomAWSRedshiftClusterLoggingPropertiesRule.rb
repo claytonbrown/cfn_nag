@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRedshiftClusterLoggingPropertiesRule < BaseRule
   def rule_text
-    "[logging] AWS::Redshift::Cluster property [LoggingProperties] should exist"
+    "[logging] AWS::Redshift::Cluster property [LoggingProperties] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSRedshiftClusterLoggingPropertiesRule < BaseRule
   end
 
   def rule_id
-    'C-0217'
+    'C-0233'
   end
 
   def audit_impl(cfn_model)

@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2TransitGatewayAttachmentVpcIdRule < BaseRule
   def rule_text
-    "[vpc-protection] AWS::EC2::TransitGatewayAttachment property [VpcId] should exist, consider default values of [ {'Ref': 'VpcId'} ] "
+    "[vpc-protection] AWS::EC2::TransitGatewayAttachment property [VpcId] should exist, consider default values of [ {'Ref': 'VpcId'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSEC2TransitGatewayAttachmentVpcIdRule < BaseRule
   end
 
   def rule_id
-    'C-0089'
+    'C-0094'
   end
 
   def audit_impl(cfn_model)

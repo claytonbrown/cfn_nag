@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSCloudTrailTrailEnableLogFileValidationRule < BaseRule
   def rule_text
-    "[encrypted] AWS::CloudTrail::Trail property [EnableLogFileValidation] should exist, consider default values of [ True ] "
+    "[encrypted] AWS::CloudTrail::Trail property [EnableLogFileValidation] should exist, consider default values of [ True ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSCloudTrailTrailEnableLogFileValidationRule < BaseRule
   end
 
   def rule_id
-    'C-0030'
+    'C-0035'
   end
 
   def audit_impl(cfn_model)

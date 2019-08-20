@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2NetworkAclVpcIdRule < BaseRule
   def rule_text
-    "[vpc-protection] AWS::EC2::NetworkAcl property [VpcId] should exist, consider default values of [ {'Ref': 'VpcId'} ] "
+    "[vpc-protection] AWS::EC2::NetworkAcl property [VpcId] should exist, consider default values of [ {'Ref': 'VpcId'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSEC2NetworkAclVpcIdRule < BaseRule
   end
 
   def rule_id
-    'C-0077'
+    'C-0082'
   end
 
   def audit_impl(cfn_model)

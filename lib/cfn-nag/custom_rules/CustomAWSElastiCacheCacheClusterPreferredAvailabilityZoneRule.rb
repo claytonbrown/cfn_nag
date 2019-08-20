@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSElastiCacheCacheClusterPreferredAvailabilityZoneRule < BaseRule
   def rule_text
-    "[zone-specific] AWS::ElastiCache::CacheCluster property [PreferredAvailabilityZone] should exist"
+    "[zone-specific] AWS::ElastiCache::CacheCluster property [PreferredAvailabilityZone] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSElastiCacheCacheClusterPreferredAvailabilityZoneRule < BaseRule
   end
 
   def rule_id
-    'C-0116'
+    'C-0125'
   end
 
   def audit_impl(cfn_model)

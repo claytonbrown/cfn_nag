@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSDMSReplicationInstanceAvailabilityZoneRule < BaseRule
   def rule_text
-    "[zone-specific] AWS::DMS::ReplicationInstance property [AvailabilityZone] should exist"
+    "[zone-specific] AWS::DMS::ReplicationInstance property [AvailabilityZone] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSDMSReplicationInstanceAvailabilityZoneRule < BaseRule
   end
 
   def rule_id
-    'C-0044'
+    'C-0049'
   end
 
   def audit_impl(cfn_model)

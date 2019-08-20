@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSLogsLogStreamLogGroupNameRule < BaseRule
   def rule_text
-    "[logging] AWS::Logs::LogStream property [LogGroupName] should exist"
+    "[logging] AWS::Logs::LogStream property [LogGroupName] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSLogsLogStreamLogGroupNameRule < BaseRule
   end
 
   def rule_id
-    'C-0158'
+    'C-0170'
   end
 
   def audit_impl(cfn_model)

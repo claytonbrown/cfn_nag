@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSSQSQueueKmsMasterKeyIdRule < BaseRule
   def rule_text
-    "[kms-encryption-key] AWS::SQS::Queue property [KmsMasterKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ] "
+    "[kms-encryption-key] AWS::SQS::Queue property [KmsMasterKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSSQSQueueKmsMasterKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0235'
+    'C-0251'
   end
 
   def audit_impl(cfn_model)

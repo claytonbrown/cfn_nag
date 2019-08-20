@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEMRClusterLogUriRule < BaseRule
   def rule_text
-    "[logging] AWS::EMR::Cluster property [LogUri] should exist"
+    "[logging] AWS::EMR::Cluster property [LogUri] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSEMRClusterLogUriRule < BaseRule
   end
 
   def rule_id
-    'C-0114'
+    'C-0123'
   end
 
   def audit_impl(cfn_model)

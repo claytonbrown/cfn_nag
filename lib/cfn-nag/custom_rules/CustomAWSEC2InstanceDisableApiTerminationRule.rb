@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2InstanceDisableApiTerminationRule < BaseRule
   def rule_text
-    "[standards] AWS::EC2::Instance property [DisableApiTermination] should exist, consider default values of [ False ] "
+    "[standards] AWS::EC2::Instance property [DisableApiTermination] should exist, consider default values of [ False ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSEC2InstanceDisableApiTerminationRule < BaseRule
   end
 
   def rule_id
-    'C-0071'
+    'C-0076'
   end
 
   def audit_impl(cfn_model)

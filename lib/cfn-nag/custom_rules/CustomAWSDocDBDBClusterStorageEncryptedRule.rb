@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSDocDBDBClusterStorageEncryptedRule < BaseRule
   def rule_text
-    "[encrypted] AWS::DocDB::DBCluster property [StorageEncrypted] should exist, consider default values of [ True ] "
+    "[encrypted] AWS::DocDB::DBCluster property [StorageEncrypted] should exist, consider default values of [ True ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSDocDBDBClusterStorageEncryptedRule < BaseRule
   end
 
   def rule_id
-    'C-0055'
+    'C-0060'
   end
 
   def audit_impl(cfn_model)

@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSOpsWorksStackVpcIdRule < BaseRule
   def rule_text
-    "[vpc-protection] AWS::OpsWorks::Stack property [VpcId] should exist, consider default values of [ {'Ref': 'VpcId'} ] "
+    "[vpc-protection] AWS::OpsWorks::Stack property [VpcId] should exist, consider default values of [ {'Ref': 'VpcId'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSOpsWorksStackVpcIdRule < BaseRule
   end
 
   def rule_id
-    'C-0183'
+    'C-0199'
   end
 
   def audit_impl(cfn_model)

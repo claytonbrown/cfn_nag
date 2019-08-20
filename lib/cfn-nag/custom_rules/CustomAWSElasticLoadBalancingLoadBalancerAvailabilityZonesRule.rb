@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSElasticLoadBalancingLoadBalancerAvailabilityZonesRule < BaseRule
   def rule_text
-    "[zone-specific] AWS::ElasticLoadBalancing::LoadBalancer property [AvailabilityZones] should exist"
+    "[zone-specific] AWS::ElasticLoadBalancing::LoadBalancer property [AvailabilityZones] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSElasticLoadBalancingLoadBalancerAvailabilityZonesRule < BaseRule
   end
 
   def rule_id
-    'C-0129'
+    'C-0138'
   end
 
   def audit_impl(cfn_model)

@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSAutoScalingAutoScalingGroupAvailabilityZonesRule < BaseRule
   def rule_text
-    "[zone-specific] AWS::AutoScaling::AutoScalingGroup property [AvailabilityZones] should exist"
+    "[zone-specific] AWS::AutoScaling::AutoScalingGroup property [AvailabilityZones] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSAutoScalingAutoScalingGroupAvailabilityZonesRule < BaseRule
   end
 
   def rule_id
-    'C-0019'
+    'C-0024'
   end
 
   def audit_impl(cfn_model)

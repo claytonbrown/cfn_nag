@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRDSDBClusterKmsKeyIdRule < BaseRule
   def rule_text
-    "[kms-encryption-key] AWS::RDS::DBCluster property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ] "
+    "[kms-encryption-key] AWS::RDS::DBCluster property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSRDSDBClusterKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0193'
+    'C-0209'
   end
 
   def audit_impl(cfn_model)

@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSKinesisStreamStreamEncryptionRule < BaseRule
   def rule_text
-    "[encrypted] AWS::Kinesis::Stream property [StreamEncryption] should exist and be set to 'KMS' with reference to KmsKeyID parameter"
+    "[encrypted] AWS::Kinesis::Stream property [StreamEncryption] should exist and be set to 'KMS' with reference to KmsKeyID parameter []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSKinesisStreamStreamEncryptionRule < BaseRule
   end
 
   def rule_id
-    'C-0154'
+    'C-0166'
   end
 
   def audit_impl(cfn_model)

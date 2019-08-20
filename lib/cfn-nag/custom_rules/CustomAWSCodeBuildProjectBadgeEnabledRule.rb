@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSCodeBuildProjectBadgeEnabledRule < BaseRule
   def rule_text
-    "[standards] AWS::CodeBuild::Project property [BadgeEnabled] should exist, consider default values of [ False ] "
+    "[standards] AWS::CodeBuild::Project property [BadgeEnabled] should exist, consider default values of [ False ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSCodeBuildProjectBadgeEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0035'
+    'C-0040'
   end
 
   def audit_impl(cfn_model)

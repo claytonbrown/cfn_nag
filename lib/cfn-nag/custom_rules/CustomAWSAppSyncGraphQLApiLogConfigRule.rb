@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSAppSyncGraphQLApiLogConfigRule < BaseRule
   def rule_text
-    "[logging] AWS::AppSync::GraphQLApi property [LogConfig] should exist"
+    "[logging] AWS::AppSync::GraphQLApi property [LogConfig] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSAppSyncGraphQLApiLogConfigRule < BaseRule
   end
 
   def rule_id
-    'C-0017'
+    'C-0022'
   end
 
   def audit_impl(cfn_model)

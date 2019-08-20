@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSSageMakerEndpointConfigKmsKeyIdRule < BaseRule
   def rule_text
-    "[kms-encryption-key] AWS::SageMaker::EndpointConfig property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ] "
+    "[kms-encryption-key] AWS::SageMaker::EndpointConfig property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSSageMakerEndpointConfigKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0245'
+    'C-0261'
   end
 
   def audit_impl(cfn_model)

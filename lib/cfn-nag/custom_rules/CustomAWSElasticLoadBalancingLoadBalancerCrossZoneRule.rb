@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSElasticLoadBalancingLoadBalancerCrossZoneRule < BaseRule
   def rule_text
-    "[standards] AWS::ElasticLoadBalancing::LoadBalancer property [CrossZone] should exist, consider default values of [ True ] "
+    "[standards] AWS::ElasticLoadBalancing::LoadBalancer property [CrossZone] should exist, consider default values of [ True ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSElasticLoadBalancingLoadBalancerCrossZoneRule < BaseRule
   end
 
   def rule_id
-    'C-0130'
+    'C-0139'
   end
 
   def audit_impl(cfn_model)

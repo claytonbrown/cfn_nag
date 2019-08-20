@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2FlowLogDeliverLogsPermissionArnRule < BaseRule
   def rule_text
-    "[logging] AWS::EC2::FlowLog property [DeliverLogsPermissionArn] should exist"
+    "[logging] AWS::EC2::FlowLog property [DeliverLogsPermissionArn] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSEC2FlowLogDeliverLogsPermissionArnRule < BaseRule
   end
 
   def rule_id
-    'C-0067'
+    'C-0072'
   end
 
   def audit_impl(cfn_model)

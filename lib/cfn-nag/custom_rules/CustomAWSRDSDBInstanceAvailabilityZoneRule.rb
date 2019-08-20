@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRDSDBInstanceAvailabilityZoneRule < BaseRule
   def rule_text
-    "[zone-specific] AWS::RDS::DBInstance property [AvailabilityZone] should exist"
+    "[zone-specific] AWS::RDS::DBInstance property [AvailabilityZone] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSRDSDBInstanceAvailabilityZoneRule < BaseRule
   end
 
   def rule_id
-    'C-0198'
+    'C-0214'
   end
 
   def audit_impl(cfn_model)

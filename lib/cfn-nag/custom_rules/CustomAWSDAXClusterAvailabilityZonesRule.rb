@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSDAXClusterAvailabilityZonesRule < BaseRule
   def rule_text
-    "[zone-specific] AWS::DAX::Cluster property [AvailabilityZones] should exist"
+    "[zone-specific] AWS::DAX::Cluster property [AvailabilityZones] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSDAXClusterAvailabilityZonesRule < BaseRule
   end
 
   def rule_id
-    'C-0039'
+    'C-0044'
   end
 
   def audit_impl(cfn_model)

@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEFSFileSystemEncryptedRule < BaseRule
   def rule_text
-    "[encrypted] AWS::EFS::FileSystem property [Encrypted] should exist, consider default values of [ True ] "
+    "[encrypted] AWS::EFS::FileSystem property [Encrypted] should exist, consider default values of [ True ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSEFSFileSystemEncryptedRule < BaseRule
   end
 
   def rule_id
-    'C-0112'
+    'C-0121'
   end
 
   def audit_impl(cfn_model)

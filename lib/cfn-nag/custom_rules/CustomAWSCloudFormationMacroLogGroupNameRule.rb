@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSCloudFormationMacroLogGroupNameRule < BaseRule
   def rule_text
-    "[logging] AWS::CloudFormation::Macro property [LogGroupName] should exist"
+    "[logging] AWS::CloudFormation::Macro property [LogGroupName] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSCloudFormationMacroLogGroupNameRule < BaseRule
   end
 
   def rule_id
-    'C-0022'
+    'C-0027'
   end
 
   def audit_impl(cfn_model)

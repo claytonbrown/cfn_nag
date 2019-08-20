@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSDocDBDBInstanceAvailabilityZoneRule < BaseRule
   def rule_text
-    "[zone-specific] AWS::DocDB::DBInstance property [AvailabilityZone] should exist"
+    "[zone-specific] AWS::DocDB::DBInstance property [AvailabilityZone] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSDocDBDBInstanceAvailabilityZoneRule < BaseRule
   end
 
   def rule_id
-    'C-0058'
+    'C-0063'
   end
 
   def audit_impl(cfn_model)

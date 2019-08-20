@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2VPCEndpointPrivateDnsEnabledRule < BaseRule
   def rule_text
-    "[standards] AWS::EC2::VPCEndpoint property [PrivateDnsEnabled] should exist, consider default values of [ True ] "
+    "[standards] AWS::EC2::VPCEndpoint property [PrivateDnsEnabled] should exist, consider default values of [ True ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSEC2VPCEndpointPrivateDnsEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0098'
+    'C-0103'
   end
 
   def audit_impl(cfn_model)

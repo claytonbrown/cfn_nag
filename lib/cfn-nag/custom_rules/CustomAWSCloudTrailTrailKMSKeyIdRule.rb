@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSCloudTrailTrailKMSKeyIdRule < BaseRule
   def rule_text
-    "[kms-encryption-key] AWS::CloudTrail::Trail property [KMSKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ] "
+    "[kms-encryption-key] AWS::CloudTrail::Trail property [KMSKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSCloudTrailTrailKMSKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0033'
+    'C-0038'
   end
 
   def audit_impl(cfn_model)

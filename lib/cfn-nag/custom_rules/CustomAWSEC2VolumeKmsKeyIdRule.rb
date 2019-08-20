@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2VolumeKmsKeyIdRule < BaseRule
   def rule_text
-    "[kms-encryption-key] AWS::EC2::Volume property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ] "
+    "[kms-encryption-key] AWS::EC2::Volume property [KmsKeyId] should exist, consider default values of [ {'Ref': 'KmsKeyId'} ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSEC2VolumeKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0109'
+    'C-0114'
   end
 
   def audit_impl(cfn_model)

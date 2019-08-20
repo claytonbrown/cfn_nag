@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSOpsWorksCMServerDisableAutomatedBackupRule < BaseRule
   def rule_text
-    "[standards] AWS::OpsWorksCM::Server property [DisableAutomatedBackup] should exist, consider default values of [ False ] "
+    "[standards] AWS::OpsWorksCM::Server property [DisableAutomatedBackup] should exist, consider default values of [ False ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSOpsWorksCMServerDisableAutomatedBackupRule < BaseRule
   end
 
   def rule_id
-    'C-0184'
+    'C-0200'
   end
 
   def audit_impl(cfn_model)

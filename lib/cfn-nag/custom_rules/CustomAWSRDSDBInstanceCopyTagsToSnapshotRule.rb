@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRDSDBInstanceCopyTagsToSnapshotRule < BaseRule
   def rule_text
-    "[standards] AWS::RDS::DBInstance property [CopyTagsToSnapshot] should exist, consider default values of [ True ] "
+    "[standards] AWS::RDS::DBInstance property [CopyTagsToSnapshot] should exist, consider default values of [ True ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSRDSDBInstanceCopyTagsToSnapshotRule < BaseRule
   end
 
   def rule_id
-    'C-0200'
+    'C-0216'
   end
 
   def audit_impl(cfn_model)

@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRedshiftClusterAvailabilityZoneRule < BaseRule
   def rule_text
-    "[zone-specific] AWS::Redshift::Cluster property [AvailabilityZone] should exist"
+    "[zone-specific] AWS::Redshift::Cluster property [AvailabilityZone] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSRedshiftClusterAvailabilityZoneRule < BaseRule
   end
 
   def rule_id
-    'C-0213'
+    'C-0229'
   end
 
   def audit_impl(cfn_model)

@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSGameLiftFleetLogPathsRule < BaseRule
   def rule_text
-    "[logging] AWS::GameLift::Fleet property [LogPaths] should exist"
+    "[logging] AWS::GameLift::Fleet property [LogPaths] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSGameLiftFleetLogPathsRule < BaseRule
   end
 
   def rule_id
-    'C-0140'
+    'C-0149'
   end
 
   def audit_impl(cfn_model)

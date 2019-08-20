@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSSSMMaintenanceWindowTaskLoggingInfoRule < BaseRule
   def rule_text
-    "[logging] AWS::SSM::MaintenanceWindowTask property [LoggingInfo] should exist"
+    "[logging] AWS::SSM::MaintenanceWindowTask property [LoggingInfo] should exist []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSSSMMaintenanceWindowTaskLoggingInfoRule < BaseRule
   end
 
   def rule_id
-    'C-0240'
+    'C-0256'
   end
 
   def audit_impl(cfn_model)

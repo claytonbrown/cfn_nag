@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSNeptuneDBClusterIamAuthEnabledRule < BaseRule
   def rule_text
-    "[standards] AWS::Neptune::DBCluster property [IamAuthEnabled] should exist, consider default values of [ True ] "
+    "[standards] AWS::Neptune::DBCluster property [IamAuthEnabled] should exist, consider default values of [ True ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSNeptuneDBClusterIamAuthEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0165'
+    'C-0181'
   end
 
   def audit_impl(cfn_model)
