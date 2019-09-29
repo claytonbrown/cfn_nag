@@ -12,7 +12,7 @@ class CustomAWSSecretsManagerSecretKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0266'
+    'C-0280'
   end
 
   def audit_impl(cfn_model)

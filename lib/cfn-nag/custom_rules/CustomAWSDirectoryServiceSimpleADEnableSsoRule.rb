@@ -12,7 +12,7 @@ class CustomAWSDirectoryServiceSimpleADEnableSsoRule < BaseRule
   end
 
   def rule_id
-    'C-0055'
+    'C-0056'
   end
 
   def audit_impl(cfn_model)

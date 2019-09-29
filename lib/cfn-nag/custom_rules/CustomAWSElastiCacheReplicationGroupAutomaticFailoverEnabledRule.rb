@@ -12,7 +12,7 @@ class CustomAWSElastiCacheReplicationGroupAutomaticFailoverEnabledRule < BaseRul
   end
 
   def rule_id
-    'C-0131'
+    'C-0132'
   end
 
   def audit_impl(cfn_model)

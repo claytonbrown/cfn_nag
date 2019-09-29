@@ -12,7 +12,7 @@ class CustomAWSS3BucketVersioningConfigurationRule < BaseRule
   end
 
   def rule_id
-    'C-0249'
+    'C-0262'
   end
 
   def audit_impl(cfn_model)

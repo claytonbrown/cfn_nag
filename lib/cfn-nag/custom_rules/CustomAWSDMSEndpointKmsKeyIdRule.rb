@@ -12,7 +12,7 @@ class CustomAWSDMSEndpointKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0046'
+    'C-0047'
   end
 
   def audit_impl(cfn_model)

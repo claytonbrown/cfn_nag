@@ -12,7 +12,7 @@ class CustomAWSIoTAnalyticsDatasetVersioningConfigurationRule < BaseRule
   end
 
   def rule_id
-    'C-0158'
+    'C-0170'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSDMSReplicationInstanceAvailabilityZoneRule < BaseRule
   end
 
   def rule_id
-    'C-0049'
+    'C-0050'
   end
 
   def audit_impl(cfn_model)

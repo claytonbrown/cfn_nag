@@ -12,7 +12,7 @@ class CustomAWSEC2InstanceAvailabilityZoneRule < BaseRule
   end
 
   def rule_id
-    'C-0075'
+    'C-0076'
   end
 
   def audit_impl(cfn_model)

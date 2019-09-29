@@ -12,7 +12,7 @@ class CustomAWSEC2CapacityReservationAvailabilityZoneRule < BaseRule
   end
 
   def rule_id
-    'C-0067'
+    'C-0068'
   end
 
   def audit_impl(cfn_model)

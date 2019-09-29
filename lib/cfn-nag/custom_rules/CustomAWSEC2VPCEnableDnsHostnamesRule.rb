@@ -12,7 +12,7 @@ class CustomAWSEC2VPCEnableDnsHostnamesRule < BaseRule
   end
 
   def rule_id
-    'C-0097'
+    'C-0098'
   end
 
   def audit_impl(cfn_model)

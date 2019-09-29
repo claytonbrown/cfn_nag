@@ -12,7 +12,7 @@ class CustomAWSNeptuneDBClusterBackupRetentionPeriodRule < BaseRule
   end
 
   def rule_id
-    'C-0180'
+    'C-0192'
   end
 
   def audit_impl(cfn_model)

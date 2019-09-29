@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSElasticLoadBalancingV2TargetGroupVpcIdRule < BaseRule
   def rule_text
-    "[vpc-protection] AWS::ElasticLoadBalancingV2::TargetGroup property [VpcId] should exist, consider default values of [ {'Ref': 'VpcId'} ]  []"
+    "[vpc-protection] AWS::ElasticLoadBalancingV2::TargetGroup property [VpcId] should exist, consider default values of [ {'Ref': 'VpcId'} ]  [WA-sec_network_protection_layered]"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSElasticLoadBalancingV2TargetGroupVpcIdRule < BaseRule
   end
 
   def rule_id
-    'C-0145'
+    'C-0148'
   end
 
   def audit_impl(cfn_model)

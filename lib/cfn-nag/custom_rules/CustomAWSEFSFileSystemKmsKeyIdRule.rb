@@ -12,7 +12,7 @@ class CustomAWSEFSFileSystemKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0122'
+    'C-0123'
   end
 
   def audit_impl(cfn_model)

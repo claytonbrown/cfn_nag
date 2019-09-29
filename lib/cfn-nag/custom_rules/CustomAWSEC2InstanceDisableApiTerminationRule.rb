@@ -12,7 +12,7 @@ class CustomAWSEC2InstanceDisableApiTerminationRule < BaseRule
   end
 
   def rule_id
-    'C-0076'
+    'C-0077'
   end
 
   def audit_impl(cfn_model)

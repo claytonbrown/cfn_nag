@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSNeptuneDBClusterStorageEncryptedRule < BaseRule
   def rule_text
-    "[encrypted] AWS::Neptune::DBCluster property [StorageEncrypted] should exist, consider default values of [ True ]  []"
+    "[encryption_at_rest] AWS::Neptune::DBCluster property [StorageEncrypted] should exist, consider default values of [ True ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSNeptuneDBClusterStorageEncryptedRule < BaseRule
   end
 
   def rule_id
-    'C-0184'
+    'C-0196'
   end
 
   def audit_impl(cfn_model)

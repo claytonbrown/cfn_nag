@@ -12,7 +12,7 @@ class CustomAWSGuardDutyDetectorEnableRule < BaseRule
   end
 
   def rule_id
-    'C-0155'
+    'C-0166'
   end
 
   def audit_impl(cfn_model)

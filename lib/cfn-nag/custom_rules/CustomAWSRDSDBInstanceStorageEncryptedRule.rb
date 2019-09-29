@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRDSDBInstanceStorageEncryptedRule < BaseRule
   def rule_text
-    "[encrypted] AWS::RDS::DBInstance property [StorageEncrypted] should exist, consider default values of [ True ]  []"
+    "[encryption_at_rest] AWS::RDS::DBInstance property [StorageEncrypted] should exist, consider default values of [ True ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSRDSDBInstanceStorageEncryptedRule < BaseRule
   end
 
   def rule_id
-    'C-0222'
+    'C-0235'
   end
 
   def audit_impl(cfn_model)

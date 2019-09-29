@@ -12,7 +12,7 @@ class CustomAWSEC2VPCEndpointPrivateDnsEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0103'
+    'C-0104'
   end
 
   def audit_impl(cfn_model)

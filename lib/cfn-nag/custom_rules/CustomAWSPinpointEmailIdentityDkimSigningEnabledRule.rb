@@ -12,7 +12,7 @@ class CustomAWSPinpointEmailIdentityDkimSigningEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0203'
+    'C-0215'
   end
 
   def audit_impl(cfn_model)

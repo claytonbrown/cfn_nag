@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSElastiCacheReplicationGroupTransitEncryptionEnabledRule < BaseRule
   def rule_text
-    "[encrypted] AWS::ElastiCache::ReplicationGroup property [TransitEncryptionEnabled] should exist, consider default values of [ True ]  []"
+    "[encryption_at_rest] AWS::ElastiCache::ReplicationGroup property [TransitEncryptionEnabled] should exist, consider default values of [ True ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSElastiCacheReplicationGroupTransitEncryptionEnabledRule < BaseRul
   end
 
   def rule_id
-    'C-0134'
+    'C-0136'
   end
 
   def audit_impl(cfn_model)

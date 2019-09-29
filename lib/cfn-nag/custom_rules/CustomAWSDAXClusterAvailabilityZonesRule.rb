@@ -12,7 +12,7 @@ class CustomAWSDAXClusterAvailabilityZonesRule < BaseRule
   end
 
   def rule_id
-    'C-0044'
+    'C-0045'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSRDSDBClusterAvailabilityZonesRule < BaseRule
   end
 
   def rule_id
-    'C-0206'
+    'C-0219'
   end
 
   def audit_impl(cfn_model)

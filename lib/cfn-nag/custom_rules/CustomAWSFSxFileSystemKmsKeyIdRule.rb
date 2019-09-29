@@ -12,7 +12,7 @@ class CustomAWSFSxFileSystemKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0147'
+    'C-0150'
   end
 
   def audit_impl(cfn_model)

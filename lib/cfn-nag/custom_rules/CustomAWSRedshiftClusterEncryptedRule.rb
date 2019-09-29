@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRedshiftClusterEncryptedRule < BaseRule
   def rule_text
-    "[encrypted] AWS::Redshift::Cluster property [Encrypted] should exist, consider default values of [ True ]  []"
+    "[encryption_at_rest] AWS::Redshift::Cluster property [Encrypted] should exist, consider default values of [ True ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSRedshiftClusterEncryptedRule < BaseRule
   end
 
   def rule_id
-    'C-0231'
+    'C-0244'
   end
 
   def audit_impl(cfn_model)

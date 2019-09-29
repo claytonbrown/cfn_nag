@@ -12,7 +12,7 @@ class CustomAWSElasticLoadBalancingV2TargetGroupHealthCheckEnabledRule < BaseRul
   end
 
   def rule_id
-    'C-0143'
+    'C-0146'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSLogsLogStreamLogStreamNameRule < BaseRule
   end
 
   def rule_id
-    'C-0171'
+    'C-0183'
   end
 
   def audit_impl(cfn_model)

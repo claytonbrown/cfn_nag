@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2VPCDHCPOptionsAssociationVpcIdRule < BaseRule
   def rule_text
-    "[vpc-protection] AWS::EC2::VPCDHCPOptionsAssociation property [VpcId] should exist, consider default values of [ {'Ref': 'VpcId'} ]  []"
+    "[vpc-protection] AWS::EC2::VPCDHCPOptionsAssociation property [VpcId] should exist, consider default values of [ {'Ref': 'VpcId'} ]  [WA-sec_network_protection_layered]"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSEC2VPCDHCPOptionsAssociationVpcIdRule < BaseRule
   end
 
   def rule_id
-    'C-0102'
+    'C-0103'
   end
 
   def audit_impl(cfn_model)

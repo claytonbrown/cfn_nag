@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRDSDBClusterStorageEncryptedRule < BaseRule
   def rule_text
-    "[encrypted] AWS::RDS::DBCluster property [StorageEncrypted] should exist, consider default values of [ True ]  []"
+    "[encryption_at_rest] AWS::RDS::DBCluster property [StorageEncrypted] should exist, consider default values of [ True ]  []"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSRDSDBClusterStorageEncryptedRule < BaseRule
   end
 
   def rule_id
-    'C-0211'
+    'C-0224'
   end
 
   def audit_impl(cfn_model)
