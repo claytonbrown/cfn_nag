@@ -12,7 +12,7 @@ class CustomAWSRedshiftClusterEncryptedRule < BaseRule
   end
 
   def rule_id
-    'C-0244'
+    'C-0272'
   end
 
   def audit_impl(cfn_model)

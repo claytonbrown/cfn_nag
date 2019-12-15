@@ -12,7 +12,7 @@ class CustomAWSDocDBDBClusterKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0059'
+    'C-0071'
   end
 
   def audit_impl(cfn_model)

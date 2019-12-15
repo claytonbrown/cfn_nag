@@ -12,7 +12,7 @@ class CustomAWSCodeBuildProjectLogsConfigRule < BaseRule
   end
 
   def rule_id
-    'C-0042'
+    'C-0051'
   end
 
   def audit_impl(cfn_model)

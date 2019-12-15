@@ -12,7 +12,7 @@ class CustomAWSRDSDBInstanceEnableIAMDatabaseAuthenticationRule < BaseRule
   end
 
   def rule_id
-    'C-0231'
+    'C-0259'
   end
 
   def audit_impl(cfn_model)

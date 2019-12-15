@@ -12,7 +12,7 @@ class CustomAWSEC2VolumeEncryptedRule < BaseRule
   end
 
   def rule_id
-    'C-0114'
+    'C-0130'
   end
 
   def audit_impl(cfn_model)

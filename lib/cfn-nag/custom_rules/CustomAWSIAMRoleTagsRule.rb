@@ -12,7 +12,7 @@ class CustomAWSIAMRoleTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0167'
+    'C-0185'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSApiGatewayStageTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0006'
+    'C-0010'
   end
 
   def audit_impl(cfn_model)

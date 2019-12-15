@@ -12,7 +12,7 @@ class CustomAWSRoute53ResolverResolverEndpointTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0256'
+    'C-0284'
   end
 
   def audit_impl(cfn_model)

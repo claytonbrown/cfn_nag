@@ -12,7 +12,7 @@ class CustomAWSCloudFormationMacroLogGroupNameRule < BaseRule
   end
 
   def rule_id
-    'C-0027'
+    'C-0036'
   end
 
   def audit_impl(cfn_model)

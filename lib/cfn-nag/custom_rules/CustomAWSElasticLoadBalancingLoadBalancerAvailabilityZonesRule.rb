@@ -12,7 +12,7 @@ class CustomAWSElasticLoadBalancingLoadBalancerAvailabilityZonesRule < BaseRule
   end
 
   def rule_id
-    'C-0140'
+    'C-0157'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSRedshiftClusterKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0245'
+    'C-0273'
   end
 
   def audit_impl(cfn_model)

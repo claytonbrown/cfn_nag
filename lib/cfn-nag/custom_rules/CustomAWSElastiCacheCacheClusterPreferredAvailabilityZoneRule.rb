@@ -12,7 +12,7 @@ class CustomAWSElastiCacheCacheClusterPreferredAvailabilityZoneRule < BaseRule
   end
 
   def rule_id
-    'C-0126'
+    'C-0143'
   end
 
   def audit_impl(cfn_model)

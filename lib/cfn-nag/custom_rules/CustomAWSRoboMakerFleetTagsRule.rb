@@ -12,7 +12,7 @@ class CustomAWSRoboMakerFleetTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0251'
+    'C-0279'
   end
 
   def audit_impl(cfn_model)

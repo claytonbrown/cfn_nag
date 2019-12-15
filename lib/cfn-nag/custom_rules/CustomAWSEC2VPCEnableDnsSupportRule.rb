@@ -12,7 +12,7 @@ class CustomAWSEC2VPCEnableDnsSupportRule < BaseRule
   end
 
   def rule_id
-    'C-0100'
+    'C-0116'
   end
 
   def audit_impl(cfn_model)

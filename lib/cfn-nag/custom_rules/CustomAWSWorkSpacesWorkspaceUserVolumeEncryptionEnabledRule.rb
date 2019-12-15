@@ -12,7 +12,7 @@ class CustomAWSWorkSpacesWorkspaceUserVolumeEncryptionEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0294'
+    'C-0323'
   end
 
   def audit_impl(cfn_model)

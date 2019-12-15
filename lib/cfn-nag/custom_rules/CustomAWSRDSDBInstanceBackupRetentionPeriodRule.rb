@@ -12,7 +12,7 @@ class CustomAWSRDSDBInstanceBackupRetentionPeriodRule < BaseRule
   end
 
   def rule_id
-    'C-0228'
+    'C-0256'
   end
 
   def audit_impl(cfn_model)

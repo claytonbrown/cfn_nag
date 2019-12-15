@@ -12,7 +12,7 @@ class CustomAWSCodeBuildProjectBadgeEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0040'
+    'C-0049'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSDocDBDBClusterParameterGroupTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0063'
+    'C-0075'
   end
 
   def audit_impl(cfn_model)

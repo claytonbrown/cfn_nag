@@ -12,7 +12,7 @@ class CustomAWSSageMakerModelTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0276'
+    'C-0305'
   end
 
   def audit_impl(cfn_model)

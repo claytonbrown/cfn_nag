@@ -12,7 +12,7 @@ class CustomAWSAppStreamImageBuilderEnableDefaultInternetAccessRule < BaseRule
   end
 
   def rule_id
-    'C-0019'
+    'C-0024'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSDMSEndpointTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0048'
+    'C-0060'
   end
 
   def audit_impl(cfn_model)

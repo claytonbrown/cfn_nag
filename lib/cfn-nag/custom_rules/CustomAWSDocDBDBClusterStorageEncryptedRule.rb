@@ -12,7 +12,7 @@ class CustomAWSDocDBDBClusterStorageEncryptedRule < BaseRule
   end
 
   def rule_id
-    'C-0061'
+    'C-0073'
   end
 
   def audit_impl(cfn_model)

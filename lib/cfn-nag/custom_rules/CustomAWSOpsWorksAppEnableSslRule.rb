@@ -12,7 +12,7 @@ class CustomAWSOpsWorksAppEnableSslRule < BaseRule
   end
 
   def rule_id
-    'C-0204'
+    'C-0226'
   end
 
   def audit_impl(cfn_model)

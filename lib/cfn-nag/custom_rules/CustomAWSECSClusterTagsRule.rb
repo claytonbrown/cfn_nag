@@ -12,7 +12,7 @@ class CustomAWSECSClusterTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0118'
+    'C-0134'
   end
 
   def audit_impl(cfn_model)

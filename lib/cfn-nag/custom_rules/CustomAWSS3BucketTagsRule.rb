@@ -12,7 +12,7 @@ class CustomAWSS3BucketTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0261'
+    'C-0289'
   end
 
   def audit_impl(cfn_model)

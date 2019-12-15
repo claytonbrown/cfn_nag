@@ -12,7 +12,7 @@ class CustomAWSEC2SecurityGroupVpcIdRule < BaseRule
   end
 
   def rule_id
-    'C-0089'
+    'C-0102'
   end
 
   def audit_impl(cfn_model)

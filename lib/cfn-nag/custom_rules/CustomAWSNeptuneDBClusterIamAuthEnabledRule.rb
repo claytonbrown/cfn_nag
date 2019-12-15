@@ -12,7 +12,7 @@ class CustomAWSNeptuneDBClusterIamAuthEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0193'
+    'C-0215'
   end
 
   def audit_impl(cfn_model)

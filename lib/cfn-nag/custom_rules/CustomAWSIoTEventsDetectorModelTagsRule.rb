@@ -12,7 +12,7 @@ class CustomAWSIoTEventsDetectorModelTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0173'
+    'C-0192'
   end
 
   def audit_impl(cfn_model)

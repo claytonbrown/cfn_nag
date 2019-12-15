@@ -12,7 +12,7 @@ class CustomAWSDocDBDBSubnetGroupTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0066'
+    'C-0078'
   end
 
   def audit_impl(cfn_model)

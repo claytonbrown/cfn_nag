@@ -12,7 +12,7 @@ class CustomAWSElasticsearchDomainTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0149'
+    'C-0166'
   end
 
   def audit_impl(cfn_model)

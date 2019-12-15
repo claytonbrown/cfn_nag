@@ -12,7 +12,7 @@ class CustomAWSPinpointEmailConfigurationSetTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0213'
+    'C-0241'
   end
 
   def audit_impl(cfn_model)

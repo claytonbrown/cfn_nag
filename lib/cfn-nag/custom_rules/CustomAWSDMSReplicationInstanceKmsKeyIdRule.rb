@@ -12,7 +12,7 @@ class CustomAWSDMSReplicationInstanceKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0051'
+    'C-0063'
   end
 
   def audit_impl(cfn_model)

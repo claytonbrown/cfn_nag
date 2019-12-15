@@ -12,7 +12,7 @@ class CustomAWSMediaStoreContainerAccessLoggingEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0190'
+    'C-0212'
   end
 
   def audit_impl(cfn_model)

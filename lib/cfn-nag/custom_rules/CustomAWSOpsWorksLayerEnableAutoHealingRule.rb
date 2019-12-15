@@ -12,7 +12,7 @@ class CustomAWSOpsWorksLayerEnableAutoHealingRule < BaseRule
   end
 
   def rule_id
-    'C-0208'
+    'C-0230'
   end
 
   def audit_impl(cfn_model)

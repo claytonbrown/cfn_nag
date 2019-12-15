@@ -12,7 +12,7 @@ class CustomAWSGreengrassCoreDefinitionTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0159'
+    'C-0177'
   end
 
   def audit_impl(cfn_model)

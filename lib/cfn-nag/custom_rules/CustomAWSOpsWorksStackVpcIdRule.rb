@@ -12,7 +12,7 @@ class CustomAWSOpsWorksStackVpcIdRule < BaseRule
   end
 
   def rule_id
-    'C-0211'
+    'C-0233'
   end
 
   def audit_impl(cfn_model)

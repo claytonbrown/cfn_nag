@@ -12,7 +12,7 @@ class CustomAWSIoTAnalyticsChannelTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0168'
+    'C-0187'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSEC2SubnetTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0091'
+    'C-0104'
   end
 
   def audit_impl(cfn_model)

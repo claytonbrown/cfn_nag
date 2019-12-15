@@ -12,7 +12,7 @@ class CustomAWSApiGatewayStageTracingEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0007'
+    'C-0011'
   end
 
   def audit_impl(cfn_model)

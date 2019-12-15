@@ -12,7 +12,7 @@ class CustomAWSSecurityHubHubTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0282'
+    'C-0311'
   end
 
   def audit_impl(cfn_model)

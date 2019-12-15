@@ -12,7 +12,7 @@ class CustomAWSNeptuneDBParameterGroupTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0201'
+    'C-0223'
   end
 
   def audit_impl(cfn_model)

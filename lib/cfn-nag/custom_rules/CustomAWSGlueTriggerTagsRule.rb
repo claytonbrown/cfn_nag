@@ -12,7 +12,7 @@ class CustomAWSGlueTriggerTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0157'
+    'C-0174'
   end
 
   def audit_impl(cfn_model)

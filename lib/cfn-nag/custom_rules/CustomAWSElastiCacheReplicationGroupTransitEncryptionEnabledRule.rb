@@ -12,7 +12,7 @@ class CustomAWSElastiCacheReplicationGroupTransitEncryptionEnabledRule < BaseRul
   end
 
   def rule_id
-    'C-0136'
+    'C-0153'
   end
 
   def audit_impl(cfn_model)
