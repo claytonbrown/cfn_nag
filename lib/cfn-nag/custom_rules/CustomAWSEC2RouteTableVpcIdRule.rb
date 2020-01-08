@@ -12,7 +12,7 @@ class CustomAWSEC2RouteTableVpcIdRule < BaseRule
   end
 
   def rule_id
-    'C-0100'
+    'C-0135'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSLogsLogGroupLogGroupNameRule < BaseRule
   end
 
   def rule_id
-    'C-0200'
+    'C-0251'
   end
 
   def audit_impl(cfn_model)

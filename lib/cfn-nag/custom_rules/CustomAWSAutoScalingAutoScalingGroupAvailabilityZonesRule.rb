@@ -12,7 +12,7 @@ class CustomAWSAutoScalingAutoScalingGroupAvailabilityZonesRule < BaseRule
   end
 
   def rule_id
-    'C-0033'
+    'C-0048'
   end
 
   def audit_impl(cfn_model)

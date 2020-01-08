@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSAppStreamFleetEnableDefaultInternetAccessRule < BaseRule
   def rule_text
-    "[standards] AWS::AppStream::Fleet property [EnableDefaultInternetAccess] should exist, consider default values of [ False ]  []"
+    "[Default ON for enable properties] AWS::AppStream::Fleet property [EnableDefaultInternetAccess] should exist, consider default values of [ true ]  [TODO]"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSAppStreamFleetEnableDefaultInternetAccessRule < BaseRule
   end
 
   def rule_id
-    'C-0022'
+    'C-0034'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSLogsMetricFilterLogGroupNameRule < BaseRule
   end
 
   def rule_id
-    'C-0203'
+    'C-0254'
   end
 
   def audit_impl(cfn_model)

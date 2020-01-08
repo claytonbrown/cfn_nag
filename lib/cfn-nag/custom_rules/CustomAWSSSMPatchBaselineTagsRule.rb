@@ -12,7 +12,7 @@ class CustomAWSSSMPatchBaselineTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0301'
+    'C-0385'
   end
 
   def audit_impl(cfn_model)

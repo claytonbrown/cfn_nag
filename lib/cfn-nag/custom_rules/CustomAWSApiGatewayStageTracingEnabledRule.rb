@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSApiGatewayStageTracingEnabledRule < BaseRule
   def rule_text
-    "[standards] AWS::ApiGateway::Stage property [TracingEnabled] should exist, consider default values of [ True ]  []"
+    "[Default ON for enable properties] AWS::ApiGateway::Stage property [TracingEnabled] should exist, consider default values of [ true ]  [TODO]"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSApiGatewayStageTracingEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0011'
+    'C-0021'
   end
 
   def audit_impl(cfn_model)

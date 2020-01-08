@@ -12,7 +12,7 @@ class CustomAWSECRRepositoryTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0133'
+    'C-0172'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSGameLiftFleetLogPathsRule < BaseRule
   end
 
   def rule_id
-    'C-0169'
+    'C-0214'
   end
 
   def audit_impl(cfn_model)

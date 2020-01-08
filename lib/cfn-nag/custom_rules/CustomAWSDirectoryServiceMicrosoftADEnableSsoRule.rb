@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSDirectoryServiceMicrosoftADEnableSsoRule < BaseRule
   def rule_text
-    "[standards] AWS::DirectoryService::MicrosoftAD property [EnableSso] should exist, consider default values of [ True ]  []"
+    "[Default ON for enable properties] AWS::DirectoryService::MicrosoftAD property [EnableSso] should exist, consider default values of [ true ]  [TODO]"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSDirectoryServiceMicrosoftADEnableSsoRule < BaseRule
   end
 
   def rule_id
-    'C-0067'
+    'C-0096'
   end
 
   def audit_impl(cfn_model)

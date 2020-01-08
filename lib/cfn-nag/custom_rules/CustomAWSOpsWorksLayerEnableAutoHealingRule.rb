@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSOpsWorksLayerEnableAutoHealingRule < BaseRule
   def rule_text
-    "[highavailability] AWS::OpsWorks::Layer property [EnableAutoHealing] should exist, consider default values of [ True ]  []"
+    "[Default ON for enable properties] AWS::OpsWorks::Layer property [EnableAutoHealing] should exist, consider default values of [ true ]  [TODO]"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSOpsWorksLayerEnableAutoHealingRule < BaseRule
   end
 
   def rule_id
-    'C-0230'
+    'C-0284'
   end
 
   def audit_impl(cfn_model)

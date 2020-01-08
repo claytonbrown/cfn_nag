@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSAppStreamImageBuilderEnableDefaultInternetAccessRule < BaseRule
   def rule_text
-    "[standards] AWS::AppStream::ImageBuilder property [EnableDefaultInternetAccess] should exist, consider default values of [ False ]  []"
+    "[Default ON for enable properties] AWS::AppStream::ImageBuilder property [EnableDefaultInternetAccess] should exist, consider default values of [ true ]  [TODO]"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSAppStreamImageBuilderEnableDefaultInternetAccessRule < BaseRule
   end
 
   def rule_id
-    'C-0024'
+    'C-0038'
   end
 
   def audit_impl(cfn_model)

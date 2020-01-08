@@ -12,7 +12,7 @@ class CustomAWSMediaLiveChannelTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0209'
+    'C-0260'
   end
 
   def audit_impl(cfn_model)

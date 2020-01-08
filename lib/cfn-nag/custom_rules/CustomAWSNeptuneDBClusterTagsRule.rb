@@ -12,7 +12,7 @@ class CustomAWSNeptuneDBClusterTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0219'
+    'C-0273'
   end
 
   def audit_impl(cfn_model)

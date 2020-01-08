@@ -12,7 +12,7 @@ class CustomAWSEFSFileSystemEncryptedRule < BaseRule
   end
 
   def rule_id
-    'C-0138'
+    'C-0178'
   end
 
   def audit_impl(cfn_model)

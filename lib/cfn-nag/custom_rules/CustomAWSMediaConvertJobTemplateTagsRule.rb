@@ -12,7 +12,7 @@ class CustomAWSMediaConvertJobTemplateTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0206'
+    'C-0257'
   end
 
   def audit_impl(cfn_model)

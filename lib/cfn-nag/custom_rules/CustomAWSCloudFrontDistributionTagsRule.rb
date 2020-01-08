@@ -12,7 +12,7 @@ class CustomAWSCloudFrontDistributionTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0038'
+    'C-0053'
   end
 
   def audit_impl(cfn_model)

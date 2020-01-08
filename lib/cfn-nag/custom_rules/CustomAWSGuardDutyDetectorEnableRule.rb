@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSGuardDutyDetectorEnableRule < BaseRule
   def rule_text
-    "[standards] AWS::GuardDuty::Detector property [Enable] should exist, consider default values of [ True ]  []"
+    "[Default ON for enable properties] AWS::GuardDuty::Detector property [Enable] should exist, consider default values of [ true ]  [TODO]"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSGuardDutyDetectorEnableRule < BaseRule
   end
 
   def rule_id
-    'C-0184'
+    'C-0231'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSGreengrassDeviceDefinitionTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0178'
+    'C-0224'
   end
 
   def audit_impl(cfn_model)

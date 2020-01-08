@@ -12,7 +12,7 @@ class CustomAWSEC2TrafficMirrorSessionTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0107'
+    'C-0142'
   end
 
   def audit_impl(cfn_model)

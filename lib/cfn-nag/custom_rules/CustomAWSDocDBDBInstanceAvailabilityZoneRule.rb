@@ -12,7 +12,7 @@ class CustomAWSDocDBDBInstanceAvailabilityZoneRule < BaseRule
   end
 
   def rule_id
-    'C-0076'
+    'C-0107'
   end
 
   def audit_impl(cfn_model)

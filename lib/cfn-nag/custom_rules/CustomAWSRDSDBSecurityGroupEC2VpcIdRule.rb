@@ -12,7 +12,7 @@ class CustomAWSRDSDBSecurityGroupEC2VpcIdRule < BaseRule
   end
 
   def rule_id
-    'C-0266'
+    'C-0344'
   end
 
   def audit_impl(cfn_model)

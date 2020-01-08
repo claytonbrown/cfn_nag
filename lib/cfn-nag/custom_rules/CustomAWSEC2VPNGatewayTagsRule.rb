@@ -12,7 +12,7 @@ class CustomAWSEC2VPNGatewayTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0126'
+    'C-0164'
   end
 
   def audit_impl(cfn_model)

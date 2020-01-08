@@ -12,7 +12,7 @@ class CustomAWSEC2TransitGatewayTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0109'
+    'C-0144'
   end
 
   def audit_impl(cfn_model)

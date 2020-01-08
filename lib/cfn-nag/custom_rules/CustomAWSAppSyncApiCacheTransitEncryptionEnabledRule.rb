@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSAppSyncApiCacheTransitEncryptionEnabledRule < BaseRule
   def rule_text
-    "[encryption_at_rest] AWS::AppSync::ApiCache property [TransitEncryptionEnabled] should exist, consider default values of [ True ]  []"
+    "[Default ON for enable properties] AWS::AppSync::ApiCache property [TransitEncryptionEnabled] should exist, consider default values of [ true ]  [TODO]"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSAppSyncApiCacheTransitEncryptionEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0030'
+    'C-0045'
   end
 
   def audit_impl(cfn_model)

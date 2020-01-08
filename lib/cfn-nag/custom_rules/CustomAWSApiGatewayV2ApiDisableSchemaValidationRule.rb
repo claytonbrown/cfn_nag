@@ -12,7 +12,7 @@ class CustomAWSApiGatewayV2ApiDisableSchemaValidationRule < BaseRule
   end
 
   def rule_id
-    'C-0013'
+    'C-0023'
   end
 
   def audit_impl(cfn_model)

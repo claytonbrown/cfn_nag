@@ -12,7 +12,7 @@ class CustomAWSSecretsManagerSecretTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0310'
+    'C-0397'
   end
 
   def audit_impl(cfn_model)

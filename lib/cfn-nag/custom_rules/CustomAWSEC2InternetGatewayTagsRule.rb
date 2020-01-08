@@ -12,7 +12,7 @@ class CustomAWSEC2InternetGatewayTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0093'
+    'C-0128'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSPinpointCampaignTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0236'
+    'C-0302'
   end
 
   def audit_impl(cfn_model)

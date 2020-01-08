@@ -12,7 +12,7 @@ class CustomAWSApiGatewayV2ApiTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0014'
+    'C-0024'
   end
 
   def audit_impl(cfn_model)

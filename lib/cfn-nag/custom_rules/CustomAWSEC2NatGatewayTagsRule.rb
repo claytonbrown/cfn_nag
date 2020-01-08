@@ -12,7 +12,7 @@ class CustomAWSEC2NatGatewayTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0094'
+    'C-0129'
   end
 
   def audit_impl(cfn_model)

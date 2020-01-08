@@ -12,7 +12,7 @@ class CustomAWSEC2NetworkInterfaceAttachmentDeleteOnTerminationRule < BaseRule
   end
 
   def rule_id
-    'C-0098'
+    'C-0133'
   end
 
   def audit_impl(cfn_model)

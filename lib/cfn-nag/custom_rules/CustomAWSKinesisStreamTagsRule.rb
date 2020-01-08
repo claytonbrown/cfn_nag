@@ -12,7 +12,7 @@ class CustomAWSKinesisStreamTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0198'
+    'C-0248'
   end
 
   def audit_impl(cfn_model)

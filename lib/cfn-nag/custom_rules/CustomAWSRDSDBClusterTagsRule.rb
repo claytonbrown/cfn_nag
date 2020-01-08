@@ -12,7 +12,7 @@ class CustomAWSRDSDBClusterTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0253'
+    'C-0328'
   end
 
   def audit_impl(cfn_model)

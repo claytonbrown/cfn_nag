@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSWorkSpacesWorkspaceRootVolumeEncryptionEnabledRule < BaseRule
   def rule_text
-    "[encryption_at_rest] AWS::WorkSpaces::Workspace property [RootVolumeEncryptionEnabled] should exist, consider default values of [ True ]  []"
+    "[Default ON for enable properties] AWS::WorkSpaces::Workspace property [RootVolumeEncryptionEnabled] should exist, consider default values of [ true ]  [TODO]"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSWorkSpacesWorkspaceRootVolumeEncryptionEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0320'
+    'C-0409'
   end
 
   def audit_impl(cfn_model)

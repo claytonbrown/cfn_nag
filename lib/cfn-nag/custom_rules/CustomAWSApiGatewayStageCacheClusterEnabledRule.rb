@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSApiGatewayStageCacheClusterEnabledRule < BaseRule
   def rule_text
-    "[standards] AWS::ApiGateway::Stage property [CacheClusterEnabled] should exist, consider default values of [ True ]  []"
+    "[Default ON for enable properties] AWS::ApiGateway::Stage property [CacheClusterEnabled] should exist, consider default values of [ true ]  [TODO]"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSApiGatewayStageCacheClusterEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0009'
+    'C-0017'
   end
 
   def audit_impl(cfn_model)

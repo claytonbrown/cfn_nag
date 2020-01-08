@@ -12,7 +12,7 @@ class CustomAWSMediaLiveInputSecurityGroupTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0211'
+    'C-0262'
   end
 
   def audit_impl(cfn_model)

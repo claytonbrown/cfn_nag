@@ -12,7 +12,7 @@ class CustomAWSRDSDBInstanceDeleteAutomatedBackupsRule < BaseRule
   end
 
   def rule_id
-    'C-0258'
+    'C-0333'
   end
 
   def audit_impl(cfn_model)

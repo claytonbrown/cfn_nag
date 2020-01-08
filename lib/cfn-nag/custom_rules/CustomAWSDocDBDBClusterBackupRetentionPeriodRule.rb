@@ -12,7 +12,7 @@ class CustomAWSDocDBDBClusterBackupRetentionPeriodRule < BaseRule
   end
 
   def rule_id
-    'C-0070'
+    'C-0100'
   end
 
   def audit_impl(cfn_model)

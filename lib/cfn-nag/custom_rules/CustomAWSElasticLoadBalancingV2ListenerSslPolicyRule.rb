@@ -12,7 +12,7 @@ class CustomAWSElasticLoadBalancingV2ListenerSslPolicyRule < BaseRule
   end
 
   def rule_id
-    'C-0161'
+    'C-0203'
   end
 
   def audit_impl(cfn_model)

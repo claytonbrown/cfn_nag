@@ -12,7 +12,7 @@ class CustomAWSEC2VPCTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0117'
+    'C-0152'
   end
 
   def audit_impl(cfn_model)

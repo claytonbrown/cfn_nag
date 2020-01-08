@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2VPCEnableDnsHostnamesRule < BaseRule
   def rule_text
-    "[highavailability] AWS::EC2::VPC property [EnableDnsHostnames] should exist, consider default values of [ True ]  []"
+    "[Default ON for enable properties] AWS::EC2::VPC property [EnableDnsHostnames] should exist, consider default values of [ true ]  [TODO]"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSEC2VPCEnableDnsHostnamesRule < BaseRule
   end
 
   def rule_id
-    'C-0114'
+    'C-0149'
   end
 
   def audit_impl(cfn_model)

@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSOpsWorksAppEnableSslRule < BaseRule
   def rule_text
-    "[encryption_at_rest] AWS::OpsWorks::App property [EnableSsl] should exist, consider default values of [ True ]  []"
+    "[Default ON for enable properties] AWS::OpsWorks::App property [EnableSsl] should exist, consider default values of [ true ]  [TODO]"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSOpsWorksAppEnableSslRule < BaseRule
   end
 
   def rule_id
-    'C-0226'
+    'C-0280'
   end
 
   def audit_impl(cfn_model)

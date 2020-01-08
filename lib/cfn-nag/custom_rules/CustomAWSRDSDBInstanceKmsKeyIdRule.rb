@@ -12,7 +12,7 @@ class CustomAWSRDSDBInstanceKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0261'
+    'C-0339'
   end
 
   def audit_impl(cfn_model)

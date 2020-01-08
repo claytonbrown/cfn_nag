@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSEC2VolumeAutoEnableIORule < BaseRule
   def rule_text
-    "[standards] AWS::EC2::Volume property [AutoEnableIO] should exist, consider default values of [ False ]  []"
+    "[Default ON for enable properties] AWS::EC2::Volume property [AutoEnableIO] should exist, consider default values of [ true ]  [TODO]"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSEC2VolumeAutoEnableIORule < BaseRule
   end
 
   def rule_id
-    'C-0127'
+    'C-0166'
   end
 
   def audit_impl(cfn_model)

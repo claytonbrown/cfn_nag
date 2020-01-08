@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSMediaStoreContainerAccessLoggingEnabledRule < BaseRule
   def rule_text
-    "[standards] AWS::MediaStore::Container property [AccessLoggingEnabled] should exist, consider default values of [ True ]  []"
+    "[Default ON for enable properties] AWS::MediaStore::Container property [AccessLoggingEnabled] should exist, consider default values of [ true ]  [TODO]"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSMediaStoreContainerAccessLoggingEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0212'
+    'C-0264'
   end
 
   def audit_impl(cfn_model)

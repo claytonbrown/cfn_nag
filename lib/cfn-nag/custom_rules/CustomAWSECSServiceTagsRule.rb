@@ -12,7 +12,7 @@ class CustomAWSECSServiceTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0135'
+    'C-0175'
   end
 
   def audit_impl(cfn_model)

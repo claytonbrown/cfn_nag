@@ -12,7 +12,7 @@ class CustomAWSCodeCommitRepositoryTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0053'
+    'C-0070'
   end
 
   def audit_impl(cfn_model)

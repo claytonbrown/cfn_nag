@@ -12,7 +12,7 @@ class CustomAWSRDSDBClusterStorageEncryptedRule < BaseRule
   end
 
   def rule_id
-    'C-0252'
+    'C-0327'
   end
 
   def audit_impl(cfn_model)

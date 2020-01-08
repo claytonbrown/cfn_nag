@@ -12,7 +12,7 @@ class CustomAWSIoTAnalyticsPipelineTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0191'
+    'C-0240'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSElastiCacheCacheClusterTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0145'
+    'C-0186'
   end
 
   def audit_impl(cfn_model)

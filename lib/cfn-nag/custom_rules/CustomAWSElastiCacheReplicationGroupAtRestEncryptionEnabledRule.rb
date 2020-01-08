@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSElastiCacheReplicationGroupAtRestEncryptionEnabledRule < BaseRule
   def rule_text
-    "[encryption_at_rest] AWS::ElastiCache::ReplicationGroup property [AtRestEncryptionEnabled] should exist, consider default values of [ True ]  []"
+    "[Default ON for enable properties] AWS::ElastiCache::ReplicationGroup property [AtRestEncryptionEnabled] should exist, consider default values of [ true ]  [TODO]"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSElastiCacheReplicationGroupAtRestEncryptionEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0147'
+    'C-0188'
   end
 
   def audit_impl(cfn_model)

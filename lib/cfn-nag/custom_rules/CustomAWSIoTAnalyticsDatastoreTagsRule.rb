@@ -12,7 +12,7 @@ class CustomAWSIoTAnalyticsDatastoreTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0190'
+    'C-0239'
   end
 
   def audit_impl(cfn_model)

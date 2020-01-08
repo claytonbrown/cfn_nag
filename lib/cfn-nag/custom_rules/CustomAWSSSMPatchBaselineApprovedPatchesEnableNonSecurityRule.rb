@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSSSMPatchBaselineApprovedPatchesEnableNonSecurityRule < BaseRule
   def rule_text
-    "[standards] AWS::SSM::PatchBaseline property [ApprovedPatchesEnableNonSecurity] should exist, consider default values of [ False ]  []"
+    "[Default ON for enable properties] AWS::SSM::PatchBaseline property [ApprovedPatchesEnableNonSecurity] should exist, consider default values of [ true ]  [TODO]"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSSSMPatchBaselineApprovedPatchesEnableNonSecurityRule < BaseRule
   end
 
   def rule_id
-    'C-0300'
+    'C-0384'
   end
 
   def audit_impl(cfn_model)

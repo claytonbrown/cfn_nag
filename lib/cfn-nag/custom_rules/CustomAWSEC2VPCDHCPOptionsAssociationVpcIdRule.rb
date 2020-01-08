@@ -12,7 +12,7 @@ class CustomAWSEC2VPCDHCPOptionsAssociationVpcIdRule < BaseRule
   end
 
   def rule_id
-    'C-0119'
+    'C-0154'
   end
 
   def audit_impl(cfn_model)

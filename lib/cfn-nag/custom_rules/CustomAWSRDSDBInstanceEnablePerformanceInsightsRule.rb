@@ -4,7 +4,7 @@ require_relative 'base'
 
 class CustomAWSRDSDBInstanceEnablePerformanceInsightsRule < BaseRule
   def rule_text
-    "[standards] AWS::RDS::DBInstance property [EnablePerformanceInsights] should exist, consider default values of [ True ]  []"
+    "[Default ON for enable properties] AWS::RDS::DBInstance property [EnablePerformanceInsights] should exist, consider default values of [ true ]  [TODO]"
   end
 
   def rule_type
@@ -12,7 +12,7 @@ class CustomAWSRDSDBInstanceEnablePerformanceInsightsRule < BaseRule
   end
 
   def rule_id
-    'C-0260'
+    'C-0338'
   end
 
   def audit_impl(cfn_model)
