@@ -12,7 +12,7 @@ class CustomAWSApiGatewayDomainNameRegionalCertificateArnRule < BaseRule
   end
 
   def rule_id
-    'C-0012'
+    'C-0013'
   end
 
   def audit_impl(cfn_model)

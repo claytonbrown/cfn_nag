@@ -12,7 +12,7 @@ class CustomAWSApiGatewayV2StageClientCertificateIdRule < BaseRule
   end
 
   def rule_id
-    'C-0026'
+    'C-0027'
   end
 
   def audit_impl(cfn_model)

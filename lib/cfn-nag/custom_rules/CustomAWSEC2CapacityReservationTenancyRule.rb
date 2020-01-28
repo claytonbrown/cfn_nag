@@ -12,7 +12,7 @@ class CustomAWSEC2CapacityReservationTenancyRule < BaseRule
   end
 
   def rule_id
-    'C-0112'
+    'C-0114'
   end
 
   def audit_impl(cfn_model)

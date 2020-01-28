@@ -12,7 +12,7 @@ class CustomAWSEC2RouteTableTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0134'
+    'C-0136'
   end
 
   def audit_impl(cfn_model)

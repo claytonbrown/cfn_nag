@@ -12,7 +12,7 @@ class CustomAWSSSMDocumentTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0378'
+    'C-0383'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSDMSEndpointCertificateArnRule < BaseRule
   end
 
   def rule_id
-    'C-0081'
+    'C-0083'
   end
 
   def audit_impl(cfn_model)

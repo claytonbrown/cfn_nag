@@ -12,7 +12,7 @@ class CustomAWSEC2ClientVpnTargetNetworkAssociationClientVpnEndpointIdRule < Bas
   end
 
   def rule_id
-    'C-0116'
+    'C-0118'
   end
 
   def audit_impl(cfn_model)

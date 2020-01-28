@@ -12,7 +12,7 @@ class CustomAWSAppStreamFleetEnableDefaultInternetAccessRule < BaseRule
   end
 
   def rule_id
-    'C-0034'
+    'C-0035'
   end
 
   def audit_impl(cfn_model)

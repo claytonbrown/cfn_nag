@@ -12,7 +12,7 @@ class CustomAWSRDSDBInstanceEnablePerformanceInsightsRule < BaseRule
   end
 
   def rule_id
-    'C-0338'
+    'C-0343'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSSSMMaintenanceWindowTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0379'
+    'C-0384'
   end
 
   def audit_impl(cfn_model)

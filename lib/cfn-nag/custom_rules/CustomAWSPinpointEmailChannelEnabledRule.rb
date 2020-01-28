@@ -12,7 +12,7 @@ class CustomAWSPinpointEmailChannelEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0303'
+    'C-0308'
   end
 
   def audit_impl(cfn_model)

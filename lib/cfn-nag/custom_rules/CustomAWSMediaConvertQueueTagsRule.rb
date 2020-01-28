@@ -12,7 +12,7 @@ class CustomAWSMediaConvertQueueTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0259'
+    'C-0264'
   end
 
   def audit_impl(cfn_model)

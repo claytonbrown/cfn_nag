@@ -12,7 +12,7 @@ class CustomAWSRDSDBClusterEnableIAMDatabaseAuthenticationRule < BaseRule
   end
 
   def rule_id
-    'C-0324'
+    'C-0329'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSPinpointSMSChannelEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0307'
+    'C-0312'
   end
 
   def audit_impl(cfn_model)

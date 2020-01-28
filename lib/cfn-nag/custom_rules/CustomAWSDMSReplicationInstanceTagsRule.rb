@@ -12,7 +12,7 @@ class CustomAWSDMSReplicationInstanceTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0090'
+    'C-0092'
   end
 
   def audit_impl(cfn_model)

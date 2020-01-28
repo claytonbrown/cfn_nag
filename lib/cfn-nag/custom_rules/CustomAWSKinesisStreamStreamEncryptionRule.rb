@@ -12,7 +12,7 @@ class CustomAWSKinesisStreamStreamEncryptionRule < BaseRule
   end
 
   def rule_id
-    'C-0247'
+    'C-0252'
   end
 
   def audit_impl(cfn_model)

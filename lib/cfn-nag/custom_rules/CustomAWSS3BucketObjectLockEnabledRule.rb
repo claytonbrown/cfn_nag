@@ -12,7 +12,7 @@ class CustomAWSS3BucketObjectLockEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0370'
+    'C-0375'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSEC2VPCGatewayAttachmentVpcIdRule < BaseRule
   end
 
   def rule_id
-    'C-0160'
+    'C-0162'
   end
 
   def audit_impl(cfn_model)

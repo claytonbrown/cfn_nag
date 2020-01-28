@@ -12,7 +12,7 @@ class CustomAWSStepFunctionsActivityTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0402'
+    'C-0407'
   end
 
   def audit_impl(cfn_model)

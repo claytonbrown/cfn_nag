@@ -12,7 +12,7 @@ class CustomAWSMSKClusterTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0256'
+    'C-0261'
   end
 
   def audit_impl(cfn_model)

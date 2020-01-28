@@ -12,7 +12,7 @@ class CustomAWSRDSEventSubscriptionEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0347'
+    'C-0352'
   end
 
   def audit_impl(cfn_model)

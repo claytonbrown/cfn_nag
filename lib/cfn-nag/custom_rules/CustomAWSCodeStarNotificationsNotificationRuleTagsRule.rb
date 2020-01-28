@@ -12,7 +12,7 @@ class CustomAWSCodeStarNotificationsNotificationRuleTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0074'
+    'C-0076'
   end
 
   def audit_impl(cfn_model)

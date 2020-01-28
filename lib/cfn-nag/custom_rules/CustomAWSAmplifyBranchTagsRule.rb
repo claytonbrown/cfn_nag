@@ -12,7 +12,7 @@ class CustomAWSAmplifyBranchTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0006'
+    'C-0007'
   end
 
   def audit_impl(cfn_model)

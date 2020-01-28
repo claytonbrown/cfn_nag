@@ -12,7 +12,7 @@ class CustomAWSElasticLoadBalancingLoadBalancerConnectionDrainingPolicyRule < Ba
   end
 
   def rule_id
-    'C-0199'
+    'C-0201'
   end
 
   def audit_impl(cfn_model)

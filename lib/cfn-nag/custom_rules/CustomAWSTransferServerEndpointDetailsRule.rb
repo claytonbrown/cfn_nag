@@ -12,7 +12,7 @@ class CustomAWSTransferServerEndpointDetailsRule < BaseRule
   end
 
   def rule_id
-    'C-0404'
+    'C-0411'
   end
 
   def audit_impl(cfn_model)

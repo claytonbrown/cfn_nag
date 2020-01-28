@@ -12,7 +12,7 @@ class CustomAWSRDSDBInstanceEnableCloudwatchLogsExportsRule < BaseRule
   end
 
   def rule_id
-    'C-0334'
+    'C-0339'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSEC2CustomerGatewayTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0117'
+    'C-0119'
   end
 
   def audit_impl(cfn_model)

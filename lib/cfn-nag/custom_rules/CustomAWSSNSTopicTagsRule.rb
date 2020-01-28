@@ -12,7 +12,7 @@ class CustomAWSSNSTopicTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0375'
+    'C-0380'
   end
 
   def audit_impl(cfn_model)

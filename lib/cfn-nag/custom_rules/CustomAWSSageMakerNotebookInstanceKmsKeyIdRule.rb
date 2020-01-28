@@ -12,7 +12,7 @@ class CustomAWSSageMakerNotebookInstanceKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0393'
+    'C-0398'
   end
 
   def audit_impl(cfn_model)

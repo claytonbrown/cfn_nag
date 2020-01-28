@@ -12,7 +12,7 @@ class CustomAWSApiGatewayRestApiEndpointConfigurationRule < BaseRule
   end
 
   def rule_id
-    'C-0014'
+    'C-0015'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSEKSNodegroupTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0181'
+    'C-0183'
   end
 
   def audit_impl(cfn_model)

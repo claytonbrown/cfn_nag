@@ -12,7 +12,7 @@ class CustomAWSPinpointSegmentTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0308'
+    'C-0313'
   end
 
   def audit_impl(cfn_model)

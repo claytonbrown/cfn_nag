@@ -12,7 +12,7 @@ class CustomAWSCodePipelinePipelineTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0072'
+    'C-0074'
   end
 
   def audit_impl(cfn_model)

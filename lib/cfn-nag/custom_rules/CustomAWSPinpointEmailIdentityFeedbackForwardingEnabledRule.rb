@@ -12,7 +12,7 @@ class CustomAWSPinpointEmailIdentityFeedbackForwardingEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0315'
+    'C-0320'
   end
 
   def audit_impl(cfn_model)

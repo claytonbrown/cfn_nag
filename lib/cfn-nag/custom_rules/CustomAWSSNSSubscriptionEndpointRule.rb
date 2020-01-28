@@ -12,7 +12,7 @@ class CustomAWSSNSSubscriptionEndpointRule < BaseRule
   end
 
   def rule_id
-    'C-0373'
+    'C-0378'
   end
 
   def audit_impl(cfn_model)

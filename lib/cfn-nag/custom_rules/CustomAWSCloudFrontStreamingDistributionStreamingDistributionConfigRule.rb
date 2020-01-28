@@ -12,7 +12,7 @@ class CustomAWSCloudFrontStreamingDistributionStreamingDistributionConfigRule < 
   end
 
   def rule_id
-    'C-0054'
+    'C-0056'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSAppMeshVirtualServiceTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0032'
+    'C-0033'
   end
 
   def audit_impl(cfn_model)

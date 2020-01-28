@@ -12,7 +12,7 @@ class CustomAWSRDSDBClusterBackupRetentionPeriodRule < BaseRule
   end
 
   def rule_id
-    'C-0320'
+    'C-0325'
   end
 
   def audit_impl(cfn_model)

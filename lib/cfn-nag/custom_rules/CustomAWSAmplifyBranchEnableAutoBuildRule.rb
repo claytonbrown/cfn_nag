@@ -12,7 +12,7 @@ class CustomAWSAmplifyBranchEnableAutoBuildRule < BaseRule
   end
 
   def rule_id
-    'C-0004'
+    'C-0005'
   end
 
   def audit_impl(cfn_model)

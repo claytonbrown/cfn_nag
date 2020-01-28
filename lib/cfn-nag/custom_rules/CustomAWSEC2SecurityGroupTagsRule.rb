@@ -12,7 +12,7 @@ class CustomAWSEC2SecurityGroupTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0136'
+    'C-0138'
   end
 
   def audit_impl(cfn_model)

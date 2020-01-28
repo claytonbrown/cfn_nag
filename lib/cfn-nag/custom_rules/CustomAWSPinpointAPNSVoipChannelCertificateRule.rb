@@ -12,7 +12,7 @@ class CustomAWSPinpointAPNSVoipChannelCertificateRule < BaseRule
   end
 
   def rule_id
-    'C-0295'
+    'C-0300'
   end
 
   def audit_impl(cfn_model)

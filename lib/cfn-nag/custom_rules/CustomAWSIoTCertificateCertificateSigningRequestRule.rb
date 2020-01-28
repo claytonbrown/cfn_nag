@@ -12,7 +12,7 @@ class CustomAWSIoTCertificateCertificateSigningRequestRule < BaseRule
   end
 
   def rule_id
-    'C-0235'
+    'C-0240'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSPinpointVoiceChannelEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0310'
+    'C-0315'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSRedshiftClusterSecurityGroupTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0357'
+    'C-0362'
   end
 
   def audit_impl(cfn_model)

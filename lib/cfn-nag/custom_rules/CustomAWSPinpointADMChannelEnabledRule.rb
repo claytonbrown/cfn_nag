@@ -12,7 +12,7 @@ class CustomAWSPinpointADMChannelEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0290'
+    'C-0295'
   end
 
   def audit_impl(cfn_model)

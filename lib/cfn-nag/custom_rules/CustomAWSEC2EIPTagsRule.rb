@@ -12,7 +12,7 @@ class CustomAWSEC2EIPTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0119'
+    'C-0121'
   end
 
   def audit_impl(cfn_model)

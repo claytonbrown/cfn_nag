@@ -12,7 +12,7 @@ class CustomAWSSageMakerEndpointConfigEndpointConfigNameRule < BaseRule
   end
 
   def rule_id
-    'C-0389'
+    'C-0394'
   end
 
   def audit_impl(cfn_model)

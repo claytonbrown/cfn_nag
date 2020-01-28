@@ -12,7 +12,7 @@ class CustomAWSSSMPatchBaselineApprovedPatchesEnableNonSecurityRule < BaseRule
   end
 
   def rule_id
-    'C-0384'
+    'C-0389'
   end
 
   def audit_impl(cfn_model)

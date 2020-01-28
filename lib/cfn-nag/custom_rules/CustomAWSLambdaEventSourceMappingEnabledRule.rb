@@ -12,7 +12,7 @@ class CustomAWSLambdaEventSourceMappingEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0249'
+    'C-0254'
   end
 
   def audit_impl(cfn_model)

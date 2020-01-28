@@ -12,7 +12,7 @@ class CustomAWSDMSCertificateCertificateWalletRule < BaseRule
   end
 
   def rule_id
-    'C-0080'
+    'C-0082'
   end
 
   def audit_impl(cfn_model)

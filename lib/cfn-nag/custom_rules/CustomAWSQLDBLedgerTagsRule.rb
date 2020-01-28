@@ -12,7 +12,7 @@ class CustomAWSQLDBLedgerTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0317'
+    'C-0322'
   end
 
   def audit_impl(cfn_model)

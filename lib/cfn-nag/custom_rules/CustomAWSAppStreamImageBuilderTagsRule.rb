@@ -12,7 +12,7 @@ class CustomAWSAppStreamImageBuilderTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0039'
+    'C-0040'
   end
 
   def audit_impl(cfn_model)

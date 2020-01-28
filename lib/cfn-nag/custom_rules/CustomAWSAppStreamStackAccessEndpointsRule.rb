@@ -12,7 +12,7 @@ class CustomAWSAppStreamStackAccessEndpointsRule < BaseRule
   end
 
   def rule_id
-    'C-0040'
+    'C-0041'
   end
 
   def audit_impl(cfn_model)

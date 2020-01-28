@@ -12,7 +12,7 @@ class CustomAWSRDSDBInstanceTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0342'
+    'C-0347'
   end
 
   def audit_impl(cfn_model)

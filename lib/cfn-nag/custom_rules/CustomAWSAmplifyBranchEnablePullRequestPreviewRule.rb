@@ -12,7 +12,7 @@ class CustomAWSAmplifyBranchEnablePullRequestPreviewRule < BaseRule
   end
 
   def rule_id
-    'C-0005'
+    'C-0006'
   end
 
   def audit_impl(cfn_model)

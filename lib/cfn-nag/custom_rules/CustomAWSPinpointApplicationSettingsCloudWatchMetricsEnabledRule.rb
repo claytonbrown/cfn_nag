@@ -12,7 +12,7 @@ class CustomAWSPinpointApplicationSettingsCloudWatchMetricsEnabledRule < BaseRul
   end
 
   def rule_id
-    'C-0300'
+    'C-0305'
   end
 
   def audit_impl(cfn_model)

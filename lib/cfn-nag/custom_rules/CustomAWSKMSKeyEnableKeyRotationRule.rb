@@ -12,7 +12,7 @@ class CustomAWSKMSKeyEnableKeyRotationRule < BaseRule
   end
 
   def rule_id
-    'C-0244'
+    'C-0249'
   end
 
   def audit_impl(cfn_model)

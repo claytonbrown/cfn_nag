@@ -12,7 +12,7 @@ class CustomAWSEC2ClientVpnRouteClientVpnEndpointIdRule < BaseRule
   end
 
   def rule_id
-    'C-0115'
+    'C-0117'
   end
 
   def audit_impl(cfn_model)

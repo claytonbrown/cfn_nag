@@ -12,7 +12,7 @@ class CustomAWSElastiCacheReplicationGroupAtRestEncryptionEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0188'
+    'C-0190'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSGlueJobTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0219'
+    'C-0224'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSAppStreamImageBuilderAccessEndpointsRule < BaseRule
   end
 
   def rule_id
-    'C-0036'
+    'C-0037'
   end
 
   def audit_impl(cfn_model)

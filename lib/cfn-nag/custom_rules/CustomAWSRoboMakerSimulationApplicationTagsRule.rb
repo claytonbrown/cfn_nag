@@ -12,7 +12,7 @@ class CustomAWSRoboMakerSimulationApplicationTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0362'
+    'C-0367'
   end
 
   def audit_impl(cfn_model)

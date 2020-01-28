@@ -12,7 +12,7 @@ class CustomAWSNeptuneDBClusterEnableCloudwatchLogsExportsRule < BaseRule
   end
 
   def rule_id
-    'C-0267'
+    'C-0272'
   end
 
   def audit_impl(cfn_model)

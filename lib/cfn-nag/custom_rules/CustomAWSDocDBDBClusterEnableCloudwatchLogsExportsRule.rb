@@ -12,7 +12,7 @@ class CustomAWSDocDBDBClusterEnableCloudwatchLogsExportsRule < BaseRule
   end
 
   def rule_id
-    'C-0101'
+    'C-0103'
   end
 
   def audit_impl(cfn_model)

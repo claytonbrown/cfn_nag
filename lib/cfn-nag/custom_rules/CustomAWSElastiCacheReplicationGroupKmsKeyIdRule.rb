@@ -12,7 +12,7 @@ class CustomAWSElastiCacheReplicationGroupKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0191'
+    'C-0193'
   end
 
   def audit_impl(cfn_model)

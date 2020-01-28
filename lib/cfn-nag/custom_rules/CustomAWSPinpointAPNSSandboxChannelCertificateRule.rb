@@ -12,7 +12,7 @@ class CustomAWSPinpointAPNSSandboxChannelCertificateRule < BaseRule
   end
 
   def rule_id
-    'C-0293'
+    'C-0298'
   end
 
   def audit_impl(cfn_model)

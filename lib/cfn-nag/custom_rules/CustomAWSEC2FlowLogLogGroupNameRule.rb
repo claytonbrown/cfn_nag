@@ -12,7 +12,7 @@ class CustomAWSEC2FlowLogLogGroupNameRule < BaseRule
   end
 
   def rule_id
-    'C-0122'
+    'C-0124'
   end
 
   def audit_impl(cfn_model)

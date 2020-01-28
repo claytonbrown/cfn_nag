@@ -12,7 +12,7 @@ class CustomAWSRoute53HostedZoneQueryLoggingConfigRule < BaseRule
   end
 
   def rule_id
-    'C-0363'
+    'C-0368'
   end
 
   def audit_impl(cfn_model)

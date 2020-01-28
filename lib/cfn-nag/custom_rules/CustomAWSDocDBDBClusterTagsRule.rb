@@ -12,7 +12,7 @@ class CustomAWSDocDBDBClusterTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0105'
+    'C-0107'
   end
 
   def audit_impl(cfn_model)

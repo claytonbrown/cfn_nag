@@ -12,7 +12,7 @@ class CustomAWSElasticLoadBalancingV2ListenerCertificateCertificatesRule < BaseR
   end
 
   def rule_id
-    'C-0204'
+    'C-0206'
   end
 
   def audit_impl(cfn_model)

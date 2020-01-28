@@ -12,7 +12,7 @@ class CustomAWSNeptuneDBInstanceAvailabilityZoneRule < BaseRule
   end
 
   def rule_id
-    'C-0275'
+    'C-0280'
   end
 
   def audit_impl(cfn_model)

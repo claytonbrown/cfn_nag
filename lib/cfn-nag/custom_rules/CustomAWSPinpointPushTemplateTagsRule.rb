@@ -12,7 +12,7 @@ class CustomAWSPinpointPushTemplateTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0306'
+    'C-0311'
   end
 
   def audit_impl(cfn_model)

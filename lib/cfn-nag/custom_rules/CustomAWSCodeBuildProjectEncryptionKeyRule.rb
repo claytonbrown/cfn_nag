@@ -12,7 +12,7 @@ class CustomAWSCodeBuildProjectEncryptionKeyRule < BaseRule
   end
 
   def rule_id
-    'C-0067'
+    'C-0069'
   end
 
   def audit_impl(cfn_model)

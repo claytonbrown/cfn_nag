@@ -12,7 +12,7 @@ class CustomAWSAppMeshMeshTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0028'
+    'C-0029'
   end
 
   def audit_impl(cfn_model)

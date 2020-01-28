@@ -12,7 +12,7 @@ class CustomAWSIoT1ClickDeviceEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0234'
+    'C-0239'
   end
 
   def audit_impl(cfn_model)

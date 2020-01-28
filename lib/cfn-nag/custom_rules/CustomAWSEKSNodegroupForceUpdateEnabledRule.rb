@@ -12,7 +12,7 @@ class CustomAWSEKSNodegroupForceUpdateEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0180'
+    'C-0182'
   end
 
   def audit_impl(cfn_model)

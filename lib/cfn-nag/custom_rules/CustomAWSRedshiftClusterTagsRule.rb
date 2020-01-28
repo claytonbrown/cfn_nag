@@ -12,7 +12,7 @@ class CustomAWSRedshiftClusterTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0355'
+    'C-0360'
   end
 
   def audit_impl(cfn_model)

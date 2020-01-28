@@ -12,7 +12,7 @@ class CustomAWSCertificateManagerCertificateTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0050'
+    'C-0051'
   end
 
   def audit_impl(cfn_model)

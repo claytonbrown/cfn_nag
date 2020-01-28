@@ -12,7 +12,7 @@ class CustomAWSCodeStarGitHubRepositoryEnableIssuesRule < BaseRule
   end
 
   def rule_id
-    'C-0073'
+    'C-0075'
   end
 
   def audit_impl(cfn_model)

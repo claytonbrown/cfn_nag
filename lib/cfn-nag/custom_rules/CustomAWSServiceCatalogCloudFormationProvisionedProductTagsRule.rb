@@ -12,7 +12,7 @@ class CustomAWSServiceCatalogCloudFormationProvisionedProductTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0400'
+    'C-0405'
   end
 
   def audit_impl(cfn_model)

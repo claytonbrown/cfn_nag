@@ -12,7 +12,7 @@ class CustomAWSAppStreamStackTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0041'
+    'C-0042'
   end
 
   def audit_impl(cfn_model)

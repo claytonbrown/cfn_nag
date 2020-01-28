@@ -12,7 +12,7 @@ class CustomAWSRDSDBClusterEnableCloudwatchLogsExportsRule < BaseRule
   end
 
   def rule_id
-    'C-0321'
+    'C-0326'
   end
 
   def audit_impl(cfn_model)

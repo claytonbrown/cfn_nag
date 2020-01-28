@@ -12,7 +12,7 @@ class CustomAWSOpsWorksLayerTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0285'
+    'C-0290'
   end
 
   def audit_impl(cfn_model)

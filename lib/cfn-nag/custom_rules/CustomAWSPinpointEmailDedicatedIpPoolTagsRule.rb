@@ -12,7 +12,7 @@ class CustomAWSPinpointEmailDedicatedIpPoolTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0312'
+    'C-0317'
   end
 
   def audit_impl(cfn_model)

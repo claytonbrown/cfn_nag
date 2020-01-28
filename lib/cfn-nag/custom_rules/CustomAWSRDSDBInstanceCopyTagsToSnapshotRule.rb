@@ -12,7 +12,7 @@ class CustomAWSRDSDBInstanceCopyTagsToSnapshotRule < BaseRule
   end
 
   def rule_id
-    'C-0332'
+    'C-0337'
   end
 
   def audit_impl(cfn_model)

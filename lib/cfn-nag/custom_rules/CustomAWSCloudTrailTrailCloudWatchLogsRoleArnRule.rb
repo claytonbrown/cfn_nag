@@ -12,7 +12,7 @@ class CustomAWSCloudTrailTrailCloudWatchLogsRoleArnRule < BaseRule
   end
 
   def rule_id
-    'C-0057'
+    'C-0059'
   end
 
   def audit_impl(cfn_model)

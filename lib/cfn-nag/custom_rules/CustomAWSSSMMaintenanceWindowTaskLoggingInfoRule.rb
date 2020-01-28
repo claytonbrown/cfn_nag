@@ -12,7 +12,7 @@ class CustomAWSSSMMaintenanceWindowTaskLoggingInfoRule < BaseRule
   end
 
   def rule_id
-    'C-0381'
+    'C-0386'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSOpsWorksCMServerCustomCertificateRule < BaseRule
   end
 
   def rule_id
-    'C-0288'
+    'C-0293'
   end
 
   def audit_impl(cfn_model)

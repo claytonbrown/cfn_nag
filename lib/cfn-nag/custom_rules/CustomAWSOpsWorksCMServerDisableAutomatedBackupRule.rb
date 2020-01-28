@@ -12,7 +12,7 @@ class CustomAWSOpsWorksCMServerDisableAutomatedBackupRule < BaseRule
   end
 
   def rule_id
-    'C-0289'
+    'C-0294'
   end
 
   def audit_impl(cfn_model)

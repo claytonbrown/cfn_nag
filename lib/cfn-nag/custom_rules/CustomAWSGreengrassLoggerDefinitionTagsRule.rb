@@ -12,7 +12,7 @@ class CustomAWSGreengrassLoggerDefinitionTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0227'
+    'C-0232'
   end
 
   def audit_impl(cfn_model)

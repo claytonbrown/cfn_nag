@@ -12,7 +12,7 @@ class CustomAWSAppSyncGraphQLApiTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0047'
+    'C-0048'
   end
 
   def audit_impl(cfn_model)

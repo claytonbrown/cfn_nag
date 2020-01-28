@@ -12,7 +12,7 @@ class CustomAWSDMSReplicationTaskSourceEndpointArnRule < BaseRule
   end
 
   def rule_id
-    'C-0092'
+    'C-0094'
   end
 
   def audit_impl(cfn_model)

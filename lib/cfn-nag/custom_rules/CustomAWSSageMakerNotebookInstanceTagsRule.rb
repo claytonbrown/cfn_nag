@@ -12,7 +12,7 @@ class CustomAWSSageMakerNotebookInstanceTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0394'
+    'C-0399'
   end
 
   def audit_impl(cfn_model)

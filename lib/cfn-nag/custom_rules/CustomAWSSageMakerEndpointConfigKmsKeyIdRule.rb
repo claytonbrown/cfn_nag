@@ -12,7 +12,7 @@ class CustomAWSSageMakerEndpointConfigKmsKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0390'
+    'C-0395'
   end
 
   def audit_impl(cfn_model)

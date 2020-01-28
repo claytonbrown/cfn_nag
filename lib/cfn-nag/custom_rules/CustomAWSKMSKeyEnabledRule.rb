@@ -12,7 +12,7 @@ class CustomAWSKMSKeyEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0245'
+    'C-0250'
   end
 
   def audit_impl(cfn_model)

@@ -12,7 +12,7 @@ class CustomAWSAmazonMQBrokerTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0001'
+    'C-0002'
   end
 
   def audit_impl(cfn_model)

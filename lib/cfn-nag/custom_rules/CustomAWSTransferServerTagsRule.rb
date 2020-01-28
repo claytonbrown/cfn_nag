@@ -12,7 +12,7 @@ class CustomAWSTransferServerTagsRule < BaseRule
   end
 
   def rule_id
-    'C-0406'
+    'C-0413'
   end
 
   def audit_impl(cfn_model)

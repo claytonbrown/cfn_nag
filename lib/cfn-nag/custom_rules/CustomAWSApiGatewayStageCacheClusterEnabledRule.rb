@@ -12,7 +12,7 @@ class CustomAWSApiGatewayStageCacheClusterEnabledRule < BaseRule
   end
 
   def rule_id
-    'C-0017'
+    'C-0018'
   end
 
   def audit_impl(cfn_model)

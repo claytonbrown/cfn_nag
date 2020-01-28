@@ -12,7 +12,7 @@ class CustomAWSCloudTrailTrailKMSKeyIdRule < BaseRule
   end
 
   def rule_id
-    'C-0062'
+    'C-0064'
   end
 
   def audit_impl(cfn_model)
